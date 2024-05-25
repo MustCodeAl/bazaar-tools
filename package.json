@@ -1,12 +1,15 @@
 {
   "name": "bazaar-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Helps to create starter from Bazaar template",
   "main": "index.js",
+  "bin": {
+    "your-cli-name": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mahmudul Hasan Rafi",
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0",

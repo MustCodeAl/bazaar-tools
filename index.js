@@ -10,7 +10,7 @@ program.version('1.0.0');
 
 // Define CLI commands and options
 program
-    .command('setup')
+    .command('bazaar')
     .description('Setup Bazaar template by selecting necessary components and pages')
     .action(() => {
         runSetup();
@@ -52,14 +52,14 @@ const homepages = {
     "grocery-1": {
         layout: "(layout-3)"
     },
-    "grocery-4": {
-        layout: "grocery-4"
-    },
     "grocery-2": {
         layout: "(layout-2)"
     },
     "grocery-3": {
         layout: "(layout-1)"
+    },
+    "grocery-4": {
+        layout: "grocery-4"
     },
     "health-beauty": {
         layout: "(layout-2)"
@@ -74,6 +74,14 @@ const homepages = {
         layout: "(layout-3)"
     },
 }
+function getFileExtension(outputDir) {
+    if (fs.existsSync(path.join(outputDir, 'src/app/layout.tsx'))) {
+        return 'tsx';
+    } else {
+        return 'jsx';
+    }
+}
+let fileExt;
 
 async function runSetup() {
     const inquirer = await import('inquirer');
@@ -82,44 +90,32 @@ async function runSetup() {
         {
             type: 'list',
             name: 'homepages',
-            message: 'Select the home page you need:',
+            message: 'Set root page:',
             choices: Object.keys(homepages),
-        },
-        {
-            type: 'checkbox',
-            name: 'components',
-            message: 'Select the components you need:',
-            choices: [
-                'Header',
-                'Footer',
-                'Product List',
-                'Product Detail',
-                'Shopping Cart',
-            ],
-        },
+        }
     ]);
-    console.log(answers)
+    // console.log(answers)
 
-    customizeTemplate(answers.homepages, answers.components);
+    customizeTemplate(answers.homepages);
 }
-async function customizeTemplate(selectedHomePage, components) {
-    const templateDir = path.join(__dirname, '../bazaar-next');
-    const outputDir = path.join(__dirname, 'bazaar-starter');
+
+async function customizeTemplate(selectedHomePage) {
+    const templateDir = path.join(process.cwd(), './');
+    const outputDir = path.join(process.cwd(), 'bazaar-starter');
+
+    fileExt = getFileExtension(templateDir);
 
     // Copy the template to a new directory
     await fs.copy(templateDir, outputDir, {
         filter: (src, dest) => {
             // Exclude node_modules directory
-            if (src.includes('node_modules')) {
+            if (src.includes('node_modules') || src.includes('.next') || src.includes('.git')) {
                 return false;
             }
             return true;
         }
     });
 
-    // // List of all possible pages and components
-    // const allPages = ['Homepage', 'Product Page', 'Cart Page', 'Checkout Page', 'Profile Page'];
-    // const allComponents = ['Header', 'Footer', 'Product List', 'Product Detail', 'Shopping Cart'];
     const allHomePageNames = [...Object.keys(homepages), 'landing'];
 
     // Remove unused homepages
@@ -132,20 +128,21 @@ async function customizeTemplate(selectedHomePage, components) {
 
     // remove unused homepage layouts
     for (const [key, value] of Object.entries(homepages)) {
-        if(selectedHomePage !== key) {
+        if (selectedHomePage !== key) {
             // remove unused layouts
             let layoutPath;
             // if layout name is like (layout-1)
-            if(/^\(.*\)$/.test(value.layout)) {
+            if (/^\(.*\)$/.test(value.layout)) {
                 layoutPath = path.join(outputDir, `src/app/${value.layout}/${key}`);
             } else {
                 layoutPath = path.join(outputDir, `src/app/${value.layout}`);
             }
             await fs.remove(layoutPath);
-        } else {
+        }
+        else {
             // set root layout
-            if(/^\(.*\)$/.test(value.layout)) {
-                await fs.move(path.join(outputDir, `src/app/${value.layout}/${key}/page.tsx`), path.join(outputDir, `src/app/${value.layout}/page.tsx`));
+            if (/^\(.*\)$/.test(value.layout)) {
+                await fs.move(path.join(outputDir, `src/app/${value.layout}/${key}/page.${fileExt}`), path.join(outputDir, `src/app/${value.layout}/page.${fileExt}`));
                 await fs.remove(path.join(outputDir, `src/app/${value.layout}/${key}`));
             } else {
                 await fs.rename(path.join(outputDir, `src/app/${value.layout}`), path.join(outputDir, `src/app/(${value.layout})`))
@@ -154,7 +151,7 @@ async function customizeTemplate(selectedHomePage, components) {
     }
 
     // make selected homepage root page
-    fs.remove(path.join(outputDir, 'src/app/page.tsx'))
+    fs.remove(path.join(outputDir, `src/app/page.${fileExt}`))
     // fs.remove(path.join(outputDir, 'src/app/page.jsx'))
 
 
