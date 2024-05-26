@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 
 const { Command } = require('commander');
-// const inquirer = require('inquirer');
 const fs = require('fs-extra');
 const path = require('path');
 
 const program = new Command();
-program.version('1.0.0');
-
+program.version('1.0.0', '-V, --version', 'output the version number');
+// Alias -v to --version
+program.option('-v', 'output the version number', () => {
+    console.log(program.version());
+});
 // Define CLI commands and options
 program
-    .command('bazaar')
+    .command('set-root')
     .description('Setup Bazaar template by selecting necessary components and pages')
     .action(() => {
         runSetup();
@@ -94,27 +96,26 @@ async function runSetup() {
             choices: Object.keys(homepages),
         }
     ]);
-    // console.log(answers)
-
     customizeTemplate(answers.homepages);
 }
 
 async function customizeTemplate(selectedHomePage) {
     const templateDir = path.join(process.cwd(), './');
-    const outputDir = path.join(process.cwd(), 'bazaar-starter');
+    // const outputDir = path.join(process.cwd(), 'bazaar-starter');
+    const outputDir = templateDir;
 
     fileExt = getFileExtension(templateDir);
 
     // Copy the template to a new directory
-    await fs.copy(templateDir, outputDir, {
-        filter: (src, dest) => {
-            // Exclude node_modules directory
-            if (src.includes('node_modules') || src.includes('.next') || src.includes('.git')) {
-                return false;
-            }
-            return true;
-        }
-    });
+    // await fs.copy(templateDir, outputDir, {
+    //     filter: (src, dest) => {
+    //         // Exclude node_modules directory
+    //         if (src.includes('node_modules') || src.includes('.next') || src.includes('.git')) {
+    //             return false;
+    //         }
+    //         return true;
+    //     }
+    // });
 
     const allHomePageNames = [...Object.keys(homepages), 'landing'];
 
@@ -152,10 +153,9 @@ async function customizeTemplate(selectedHomePage) {
 
     // make selected homepage root page
     fs.remove(path.join(outputDir, `src/app/page.${fileExt}`))
-    // fs.remove(path.join(outputDir, 'src/app/page.jsx'))
 
 
-    console.log('Template customization complete.');
+    console.log(`${selectedHomePage} has been set as root page.`);
 }
 
 

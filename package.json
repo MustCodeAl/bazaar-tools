@@ -1,10 +1,10 @@
 {
-  "name": "bazaar-cli",
-  "version": "1.0.0",
+  "name": "bazaar-tools",
+  "version": "1.0.1",
   "description": "Helps to create starter from Bazaar template",
   "main": "index.js",
   "bin": {
-    "your-cli-name": "./index.js"
+    "bazaar": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
