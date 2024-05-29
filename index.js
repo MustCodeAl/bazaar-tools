@@ -5,17 +5,19 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const program = new Command();
-program.version('1.0.0', '-V, --version', 'output the version number');
+program.version('1.0.3', '-V, --version', 'output the version number');
 // Alias -v to --version
 program.option('-v', 'output the version number', () => {
     console.log(program.version());
 });
-// Define CLI commands and options
+
+// CLI commands and options
 program
     .command('set-root')
     .description('Setup Bazaar template by selecting necessary components and pages')
-    .action(() => {
-        runSetup();
+    .option('--keep-components', 'Keep components in pages-sections')
+    .action((options) => {
+        runSetup(options.keepComponents);
     });
 
 program.parse(process.argv);
@@ -85,7 +87,7 @@ function getFileExtension(outputDir) {
 }
 let fileExt;
 
-async function runSetup() {
+async function runSetup(keepComponents) {
     const inquirer = await import('inquirer');
 
     const answers = await inquirer.default.prompt([
@@ -96,34 +98,25 @@ async function runSetup() {
             choices: Object.keys(homepages),
         }
     ]);
-    customizeTemplate(answers.homepages);
+    customizeTemplate(answers.homepages, keepComponents);
 }
 
-async function customizeTemplate(selectedHomePage) {
+async function customizeTemplate(selectedHomePage, keepComponents) {
     const templateDir = path.join(process.cwd(), './');
-    // const outputDir = path.join(process.cwd(), 'bazaar-starter');
     const outputDir = templateDir;
 
     fileExt = getFileExtension(templateDir);
 
-    // Copy the template to a new directory
-    // await fs.copy(templateDir, outputDir, {
-    //     filter: (src, dest) => {
-    //         // Exclude node_modules directory
-    //         if (src.includes('node_modules') || src.includes('.next') || src.includes('.git')) {
-    //             return false;
-    //         }
-    //         return true;
-    //     }
-    // });
-
     const allHomePageNames = [...Object.keys(homepages), 'landing'];
 
+    console.log('--keep-components--', keepComponents)
     // Remove unused homepages
-    for (const page of allHomePageNames) {
-        if (selectedHomePage !== page) {
-            const pagePath = path.join(outputDir, `src/pages-sections/${page}`);
-            await fs.remove(pagePath);
+    if (!keepComponents) {
+        for (const page of allHomePageNames) {
+            if (selectedHomePage !== page) {
+                const pagePath = path.join(outputDir, `src/pages-sections/${page}`);
+                await fs.remove(pagePath);
+            }
         }
     }
 

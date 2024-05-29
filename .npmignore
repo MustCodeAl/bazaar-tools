@@ -1,0 +1,32 @@
+# Exclude the .git directory
+.git
+
+# Node modules should be excluded as well (although npm does this by default)
+node_modules
+
+# Exclude local development files
+.DS_Store
+.env
+.vscode
+.idea
+*.log
+
+# Exclude build and cache directories
+dist
+build
+.cache
+.next
+
+# Exclude test and configuration files
+test
+tests
+__tests__
+coverage
+jest.config.js
+*.test.js
+*.spec.js
+
+# Exclude any other unwanted files or directories
+*.md
+*.txt
+*.log
