@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const program = new Command();
-program.version('1.0.3', '-V, --version', 'output the version number');
+program.version('1.0.4', '-V, --version', 'output the version number');
 // Alias -v to --version
 program.option('-v', 'output the version number', () => {
     console.log(program.version());
