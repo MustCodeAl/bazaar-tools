@@ -1,6 +1,6 @@
 {
   "name": "bazaar-tools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Helps to create starter from Bazaar template",
   "main": "index.js",
   "bin": {

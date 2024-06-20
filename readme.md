@@ -1,5 +1,5 @@
 # Bazaar Tools
-Build your starter template from [Bazaar Next.js ecommerce template](https://mui.com/store/items/bazar-pro-react-ecommerce-template/)
+Build your starter template from [Bazaar Next.js ecommerce template](https://bazaar.ui-lib.com/)
 
 Run this in your terminal
 `bazaar set-root`

@@ -3,9 +3,10 @@
 const { Command } = require('commander');
 const fs = require('fs-extra');
 const path = require('path');
+const { mergeDirectories } = require('./utils');
 
 const program = new Command();
-program.version('1.0.4', '-V, --version', 'output the version number');
+program.version('1.0.5', '-V, --version', 'output the version number');
 // Alias -v to --version
 program.option('-v', 'output the version number', () => {
     console.log(program.version());
@@ -110,7 +111,7 @@ async function customizeTemplate(selectedHomePage, keepComponents) {
     const allHomePageNames = [...Object.keys(homepages), 'landing'];
 
     console.log('--keep-components--', keepComponents)
-    // Remove unused homepages
+    // Remove unused homepage components from page sections
     if (!keepComponents) {
         for (const page of allHomePageNames) {
             if (selectedHomePage !== page) {
@@ -125,21 +126,29 @@ async function customizeTemplate(selectedHomePage, keepComponents) {
         if (selectedHomePage !== key) {
             // remove unused layouts
             let layoutPath;
-            // if layout name is like (layout-1)
             if (/^\(.*\)$/.test(value.layout)) {
+                // if layout name is like (layout-1)
                 layoutPath = path.join(outputDir, `src/app/${value.layout}/${key}`);
             } else {
                 layoutPath = path.join(outputDir, `src/app/${value.layout}`);
             }
             await fs.remove(layoutPath);
-        }
-        else {
+        } else {
             // set root layout
             if (/^\(.*\)$/.test(value.layout)) {
-                await fs.move(path.join(outputDir, `src/app/${value.layout}/${key}/page.${fileExt}`), path.join(outputDir, `src/app/${value.layout}/page.${fileExt}`));
+                // if layout name is like (layout-1)
+                await fs.move(
+                    path.join(outputDir, `src/app/${value.layout}/${key}/page.${fileExt}`),
+                    path.join(outputDir, `src/app/${value.layout}/page.${fileExt}`),
+                    { overwrite: true }
+                );
                 await fs.remove(path.join(outputDir, `src/app/${value.layout}/${key}`));
             } else {
-                await fs.rename(path.join(outputDir, `src/app/${value.layout}`), path.join(outputDir, `src/app/(${value.layout})`))
+                // await fs.rename(path.join(outputDir, `src/app/${value.layout}`), path.join(outputDir, `src/app/(${value.layout})`));
+                const oldPath = path.join(outputDir, `src/app/${value.layout}`);
+                const newPath = path.join(outputDir, `src/app/(${value.layout})`);
+                await fs.ensureDir(newPath);
+                await mergeDirectories(oldPath, newPath);
             }
         }
     }
