@@ -25,58 +25,58 @@ program.parse(process.argv);
 
 const homepages = {
     "fashion-1": {
-        layout: "(layout-1)"
+        layout: "fashion-1"
     },
     "fashion-2": {
-        layout: "(layout-1)"
+        layout: "fashion-2"
     },
     "fashion-3": {
-        layout: "(layout-3)"
+        layout: "fashion-3"
     },
     "furniture-1": {
-        layout: "(layout-1)"
+        layout: "furniture-1"
     },
     "furniture-2": {
-        layout: "(layout-3)"
+        layout: "furniture-2"
     },
     "furniture-3": {
         layout: "furniture-3"
     },
     "gift-shop": {
-        layout: "(layout-3)"
+        layout: "gift-shop"
     },
     "gadget-1": {
-        layout: "(layout-1)"
+        layout: "gadget-1"
     },
     "gadget-2": {
-        layout: "(layout-3)"
+        layout: "gadget-2"
     },
     "gadget-3": {
         layout: "gadget-3"
     },
     "grocery-1": {
-        layout: "(layout-3)"
+        layout: "grocery-1"
     },
     "grocery-2": {
-        layout: "(layout-2)"
+        layout: "grocery-2"
     },
     "grocery-3": {
-        layout: "(layout-1)"
+        layout: "grocery-3"
     },
     "grocery-4": {
         layout: "grocery-4"
     },
     "health-beauty": {
-        layout: "(layout-2)"
+        layout: "health-beauty"
     },
     "market-1": {
-        layout: "(layout-1)"
+        layout: "market-1"
     },
     "market-2": {
-        layout: "(layout-1)"
+        layout: "market-2"
     },
     "medical": {
-        layout: "(layout-3)"
+        layout: "medical"
     },
 }
 function getFileExtension(outputDir) {
