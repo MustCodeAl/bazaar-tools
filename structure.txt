@@ -1,0 +1,2532 @@
+.
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── public
+│   ├── assets
+│   │   ├── images
+│   │   │   ├── avatars
+│   │   │   │   ├── 001-man.svg
+│   │   │   │   ├── 002-girl.svg
+│   │   │   │   ├── 002-woman.svg
+│   │   │   │   ├── 003-boy.svg
+│   │   │   │   ├── 003-man-1.svg
+│   │   │   │   ├── 004-bald.svg
+│   │   │   │   ├── 004-woman.svg
+│   │   │   │   ├── 005-man-1.svg
+│   │   │   │   ├── 005-man-2.svg
+│   │   │   │   ├── 006-woman-1.svg
+│   │   │   │   ├── 007-boy-1.svg
+│   │   │   │   ├── 007-woman-2.svg
+│   │   │   │   ├── 008-clown.svg
+│   │   │   │   ├── 009-firefighter.svg
+│   │   │   │   ├── 010-girl-1.svg
+│   │   │   │   ├── 011-man-2.svg
+│   │   │   │   ├── 012-woman-2.svg
+│   │   │   │   ├── 013-woman-3.svg
+│   │   │   │   ├── 014-man-3.svg
+│   │   │   │   ├── 015-woman-4.svg
+│   │   │   │   ├── 016-boy-2.svg
+│   │   │   │   ├── 017-girl-2.svg
+│   │   │   │   ├── 018-boy-3.svg
+│   │   │   │   ├── 019-woman-5.svg
+│   │   │   │   ├── 020-man-4.svg
+│   │   │   │   ├── 021-girl-3.svg
+│   │   │   │   └── 022-man-5.svg
+│   │   │   ├── badges
+│   │   │   │   ├── badge-1.svg
+│   │   │   │   ├── badge-2.svg
+│   │   │   │   ├── badge-3.svg
+│   │   │   │   ├── badge-4.svg
+│   │   │   │   ├── badge-5.svg
+│   │   │   │   ├── badge-6.svg
+│   │   │   │   ├── badge-7.svg
+│   │   │   │   ├── badge-8.svg
+│   │   │   │   ├── badge-9.svg
+│   │   │   │   └── hot.svg
+│   │   │   ├── banners
+│   │   │   │   ├── banner-1.png
+│   │   │   │   ├── banner-2.png
+│   │   │   │   ├── banner-3.png
+│   │   │   │   ├── banner-4.png
+│   │   │   │   ├── banner-5.png
+│   │   │   │   ├── banner-6.png
+│   │   │   │   ├── banner-7.png
+│   │   │   │   ├── banner-8.png
+│   │   │   │   ├── banner-9.png
+│   │   │   │   ├── banner-10.png
+│   │   │   │   ├── banner-11.jpg
+│   │   │   │   ├── banner-12.jpg
+│   │   │   │   ├── banner-13.jpg
+│   │   │   │   ├── banner-14.jpg
+│   │   │   │   ├── banner-15-trashed.jpg
+│   │   │   │   ├── banner-15.jpg
+│   │   │   │   ├── banner-16.jpg
+│   │   │   │   ├── banner-17.jpg
+│   │   │   │   ├── banner-18.jpg
+│   │   │   │   ├── banner-19.jpg
+│   │   │   │   ├── banner-20.jpg
+│   │   │   │   ├── banner-21.jpg
+│   │   │   │   ├── banner-22.jpg
+│   │   │   │   ├── banner-23.jpg
+│   │   │   │   ├── banner-24.jpg
+│   │   │   │   ├── banner-25.jpg
+│   │   │   │   ├── banner-x.png
+│   │   │   │   ├── banner.png
+│   │   │   │   ├── banner2.jpg
+│   │   │   │   ├── banner3.jpg
+│   │   │   │   ├── category-1.png
+│   │   │   │   ├── category-2.png
+│   │   │   │   ├── category-3.png
+│   │   │   │   ├── cycle.png
+│   │   │   │   ├── long-banner.jpg
+│   │   │   │   ├── "men's-fashion.jpg"
+│   │   │   │   ├── men.jpg
+│   │   │   │   ├── shop-cover.png
+│   │   │   │   └── womens-fashion.jpg
+│   │   │   ├── bazaar-black-sm.svg
+│   │   │   ├── bazaar-white-sm.svg
+│   │   │   ├── blogs
+│   │   │   │   ├── blog-1.jpg
+│   │   │   │   ├── blog-2.jpg
+│   │   │   │   ├── blog-3.jpg
+│   │   │   │   ├── post-1.jpg
+│   │   │   │   ├── post-2.jpg
+│   │   │   │   ├── post-3.jpg
+│   │   │   │   ├── post-4.jpg
+│   │   │   │   ├── post-5.jpg
+│   │   │   │   └── post-6.jpg
+│   │   │   ├── brands
+│   │   │   │   ├── acer.png
+│   │   │   │   ├── alibaba.png
+│   │   │   │   ├── amazon.png
+│   │   │   │   ├── apple-2.png
+│   │   │   │   ├── apple.png
+│   │   │   │   ├── asus.png
+│   │   │   │   ├── bmw.png
+│   │   │   │   ├── brokshire.png
+│   │   │   │   ├── dell.png
+│   │   │   │   ├── ebay.png
+│   │   │   │   ├── ferrari.png
+│   │   │   │   ├── ford.png
+│   │   │   │   ├── hp.png
+│   │   │   │   ├── levis.png
+│   │   │   │   ├── lotto.png
+│   │   │   │   ├── mini.png
+│   │   │   │   ├── occular.png
+│   │   │   │   ├── ray-ban.png
+│   │   │   │   ├── raymond.png
+│   │   │   │   ├── samsung.png
+│   │   │   │   ├── sony.png
+│   │   │   │   ├── tesla.png
+│   │   │   │   ├── titan.png
+│   │   │   │   ├── toyota.png
+│   │   │   │   ├── xiaomi.png
+│   │   │   │   └── zeiss.png
+│   │   │   ├── browsers
+│   │   │   │   ├── android.svg
+│   │   │   │   ├── apple.svg
+│   │   │   │   ├── chrome.svg
+│   │   │   │   ├── explorer.svg
+│   │   │   │   ├── linux.svg
+│   │   │   │   ├── mozilla.svg
+│   │   │   │   ├── netscape.svg
+│   │   │   │   ├── opera.svg
+│   │   │   │   ├── safari.svg
+│   │   │   │   └── windows.svg
+│   │   │   ├── categories
+│   │   │   │   ├── 1.jpg
+│   │   │   │   ├── 2.jpg
+│   │   │   │   ├── 3.jpg
+│   │   │   │   ├── cat-1.jpg
+│   │   │   │   ├── cat-2.jpg
+│   │   │   │   ├── cat-3.jpg
+│   │   │   │   ├── cat-4.jpg
+│   │   │   │   ├── cat-5.jpg
+│   │   │   │   └── cat-6.jpg
+│   │   │   ├── faces
+│   │   │   │   ├── 2.jpg
+│   │   │   │   ├── 3.jpg
+│   │   │   │   ├── 4.jpg
+│   │   │   │   ├── 5.jpg
+│   │   │   │   ├── 6.png
+│   │   │   │   ├── 7.png
+│   │   │   │   ├── 8.png
+│   │   │   │   ├── 9.jpg
+│   │   │   │   ├── 10.jpg
+│   │   │   │   ├── 12.jpg
+│   │   │   │   ├── 13.jpg
+│   │   │   │   ├── 15.jpg
+│   │   │   │   ├── 16.jpg
+│   │   │   │   ├── 17.jpg
+│   │   │   │   ├── face-7.jpg
+│   │   │   │   ├── propic(1).png
+│   │   │   │   ├── propic(2).png
+│   │   │   │   ├── propic(3).png
+│   │   │   │   ├── propic(4).png
+│   │   │   │   ├── propic(5).png
+│   │   │   │   ├── propic(6).png
+│   │   │   │   ├── propic(7).png
+│   │   │   │   ├── propic(8).png
+│   │   │   │   ├── propic(9).png
+│   │   │   │   ├── propic.png
+│   │   │   │   └── ralph.png
+│   │   │   ├── file-types
+│   │   │   │   ├── 001-pdf.svg
+│   │   │   │   ├── 002-psd.svg
+│   │   │   │   ├── 003-xls.svg
+│   │   │   │   ├── 004-xlsx.svg
+│   │   │   │   ├── 005-documents.svg
+│   │   │   │   ├── 006-png.svg
+│   │   │   │   └── 007-jpg.svg
+│   │   │   ├── flags
+│   │   │   │   ├── bd.png
+│   │   │   │   ├── in.png
+│   │   │   │   ├── uk.png
+│   │   │   │   └── usa.png
+│   │   │   ├── 'Furniture Shop'
+│   │   │   │   ├── brown-chair.png
+│   │   │   │   ├── 'Furniture (1).png'
+│   │   │   │   ├── 'Furniture (2).png'
+│   │   │   │   ├── 'Furniture (3).png'
+│   │   │   │   ├── 'Furniture (4).png'
+│   │   │   │   ├── 'Furniture (5).png'
+│   │   │   │   ├── 'Furniture (6).png'
+│   │   │   │   ├── 'Furniture (7).png'
+│   │   │   │   ├── 'Furniture (8).png'
+│   │   │   │   ├── 'Furniture (9).png'
+│   │   │   │   ├── Furniture.png
+│   │   │   │   ├── 'Furniture Shop Header.jpg'
+│   │   │   │   └── green-sofa.png
+│   │   │   ├── 'Gift Shop'
+│   │   │   │   ├── 7-1.jpg
+│   │   │   │   ├── flat-lay-composition-wrapped-presents-with-copy-space.jpg
+│   │   │   │   ├── gift-box-white-background.jpg
+│   │   │   │   ├── 'Gift Box.png'
+│   │   │   │   ├── 'Gift box 2.png'
+│   │   │   │   ├── Header.png
+│   │   │   │   ├── 'Offer 1.png'
+│   │   │   │   ├── 'Offer Card.png'
+│   │   │   │   ├── 'Offer Card 2.png'
+│   │   │   │   ├── 'pngwing.com (1).png'
+│   │   │   │   ├── 'pngwing.com (2).png'
+│   │   │   │   ├── 'pngwing.com (3).png'
+│   │   │   │   ├── 'pngwing.com (4).png'
+│   │   │   │   ├── 'Product 1.png'
+│   │   │   │   ├── 'Product 2.png'
+│   │   │   │   ├── 'Product 3.png'
+│   │   │   │   ├── 'Product 4.png'
+│   │   │   │   ├── 'Product 5.png'
+│   │   │   │   ├── 'Product 6.png'
+│   │   │   │   └── 'Product 7.png'
+│   │   │   ├── 'Groceries Shop'
+│   │   │   │   ├── banner-3.png
+│   │   │   │   ├── eye.svg
+│   │   │   │   ├── 'Header Image 3.png'
+│   │   │   │   ├── heart.svg
+│   │   │   │   ├── Lemon.png
+│   │   │   │   ├── lime.png
+│   │   │   │   ├── MiniPeppers.png
+│   │   │   │   ├── 'Offer Card.png'
+│   │   │   │   ├── Orange.png
+│   │   │   │   ├── 'Red apple.png'
+│   │   │   │   ├── shopping-cart.svg
+│   │   │   │   ├── strawberry.png
+│   │   │   │   └── vagitable.png
+│   │   │   ├── headers
+│   │   │   │   ├── 'Header BG1.png'
+│   │   │   │   └── 'Header BG2.png'
+│   │   │   ├── 'Health Shop'
+│   │   │   │   ├── Doctor.png
+│   │   │   │   ├── 'Header 1.png'
+│   │   │   │   ├── 'Product (1).png'
+│   │   │   │   ├── 'Product (2).png'
+│   │   │   │   ├── 'Product (3).png'
+│   │   │   │   ├── 'Product (4).png'
+│   │   │   │   ├── 'Product (5).png'
+│   │   │   │   ├── 'Product (6).png'
+│   │   │   │   ├── 'Product (7).png'
+│   │   │   │   ├── 'Product (8).png'
+│   │   │   │   ├── 'Product (9).png'
+│   │   │   │   └── 'Vector (1).png'
+│   │   │   ├── icons
+│   │   │   │   ├── admin-dashboard.svg
+│   │   │   │   ├── alarm-clock.svg
+│   │   │   │   ├── app-store.svg
+│   │   │   │   ├── apple.svg
+│   │   │   │   ├── arrow-down-filled.svg
+│   │   │   │   ├── arrow-left.svg
+│   │   │   │   ├── arrow-long-right.svg
+│   │   │   │   ├── arrow-right.svg
+│   │   │   │   ├── baby-boy.svg
+│   │   │   │   ├── baby-feeder.svg
+│   │   │   │   ├── baby-girl.svg
+│   │   │   │   ├── bag.svg
+│   │   │   │   ├── bag_filled.svg
+│   │   │   │   ├── bangladesh.svg
+│   │   │   │   ├── basket-ball.svg
+│   │   │   │   ├── basketball-ball.svg
+│   │   │   │   ├── beauty-products.svg
+│   │   │   │   ├── beer.svg
+│   │   │   │   ├── board.svg
+│   │   │   │   ├── bottle.svg
+│   │   │   │   ├── box.svg
+│   │   │   │   ├── brand.svg
+│   │   │   │   ├── breakfast.svg
+│   │   │   │   ├── camera.svg
+│   │   │   │   ├── car.svg
+│   │   │   │   ├── carrot.svg
+│   │   │   │   ├── categories.svg
+│   │   │   │   ├── category.svg
+│   │   │   │   ├── Celebration.svg
+│   │   │   │   ├── check.svg
+│   │   │   │   ├── checkbox.svg
+│   │   │   │   ├── chevron-down.svg
+│   │   │   │   ├── chevron-left.svg
+│   │   │   │   ├── chevron-right.svg
+│   │   │   │   ├── chevron-up.svg
+│   │   │   │   ├── clock-circular-outline.svg
+│   │   │   │   ├── close.svg
+│   │   │   │   ├── cloud-data.svg
+│   │   │   │   ├── code.svg
+│   │   │   │   ├── comment.svg
+│   │   │   │   ├── credit-card-1.svg
+│   │   │   │   ├── credit-card-2.svg
+│   │   │   │   ├── credit-card.svg
+│   │   │   │   ├── credit-card_filled.svg
+│   │   │   │   ├── credit.svg
+│   │   │   │   ├── customer-service.svg
+│   │   │   │   ├── delete.svg
+│   │   │   │   ├── delivery-box.svg
+│   │   │   │   ├── delivery-truck.svg
+│   │   │   │   ├── delivery.svg
+│   │   │   │   ├── dollar.svg
+│   │   │   │   ├── done.svg
+│   │   │   │   ├── dress-1.svg
+│   │   │   │   ├── dress.svg
+│   │   │   │   ├── drill-machine.svg
+│   │   │   │   ├── edit.svg
+│   │   │   │   ├── eye-alt.svg
+│   │   │   │   ├── eye.svg
+│   │   │   │   ├── facebook-1.svg
+│   │   │   │   ├── facebook-filled-white.svg
+│   │   │   │   ├── facebook.svg
+│   │   │   │   ├── facebook_filled.svg
+│   │   │   │   ├── feature.svg
+│   │   │   │   ├── feedback-thumbs-up.svg
+│   │   │   │   ├── feeding-bottle.svg
+│   │   │   │   ├── figma.svg
+│   │   │   │   ├── fish.svg
+│   │   │   │   ├── food.svg
+│   │   │   │   ├── gear-2.svg
+│   │   │   │   ├── gift-1.svg
+│   │   │   │   ├── gift.svg
+│   │   │   │   ├── Giftbox.svg
+│   │   │   │   ├── google-1.svg
+│   │   │   │   ├── google.svg
+│   │   │   │   ├── grid.svg
+│   │   │   │   ├── Group.svg
+│   │   │   │   ├── healthy-food.svg
+│   │   │   │   ├── heart-filled.svg
+│   │   │   │   ├── heart.svg
+│   │   │   │   ├── heart_filled.svg
+│   │   │   │   ├── home.svg
+│   │   │   │   ├── honey.svg
+│   │   │   │   ├── hot-deal.svg
+│   │   │   │   ├── india.svg
+│   │   │   │   ├── instagram-1.svg
+│   │   │   │   ├── instagram.svg
+│   │   │   │   ├── instagram_filled.svg
+│   │   │   │   ├── laptop.svg
+│   │   │   │   ├── layout-list.svg
+│   │   │   │   ├── light.svg
+│   │   │   │   ├── lighting.svg
+│   │   │   │   ├── mail.svg
+│   │   │   │   ├── make-up.svg
+│   │   │   │   ├── man.svg
+│   │   │   │   ├── 'map-pin (2).svg'
+│   │   │   │   ├── map-pin-2.svg
+│   │   │   │   ├── map-pin.svg
+│   │   │   │   ├── map-pin_filled.svg
+│   │   │   │   ├── math-equal.svg
+│   │   │   │   ├── menu.svg
+│   │   │   │   ├── milk.svg
+│   │   │   │   ├── minus.svg
+│   │   │   │   ├── more-horizontal.svg
+│   │   │   │   ├── motorbike.svg
+│   │   │   │   ├── multivendor.svg
+│   │   │   │   ├── new-product-1.svg
+│   │   │   │   ├── new-product.svg
+│   │   │   │   ├── optimization.svg
+│   │   │   │   ├── options.svg
+│   │   │   │   ├── package-box.svg
+│   │   │   │   ├── phone-call.svg
+│   │   │   │   ├── phone.svg
+│   │   │   │   ├── phone_filled.svg
+│   │   │   │   ├── pick-up-box.svg
+│   │   │   │   ├── picture.svg
+│   │   │   │   ├── piggy-bank.svg
+│   │   │   │   ├── pin.svg
+│   │   │   │   ├── pin_filled.svg
+│   │   │   │   ├── plant-pot.svg
+│   │   │   │   ├── play-store.svg
+│   │   │   │   ├── plus.svg
+│   │   │   │   ├── quote-close.svg
+│   │   │   │   ├── quote-open.svg
+│   │   │   │   ├── ranking-1.svg
+│   │   │   │   ├── ranking.svg
+│   │   │   │   ├── Review.svg
+│   │   │   │   ├── right-arrow.svg
+│   │   │   │   ├── rotate-ccw.svg
+│   │   │   │   ├── search.svg
+│   │   │   │   ├── service-customer.svg
+│   │   │   │   ├── settings.svg
+│   │   │   │   ├── settings_filled.svg
+│   │   │   │   ├── shield.svg
+│   │   │   │   ├── shop.svg
+│   │   │   │   ├── shopping-cart.svg
+│   │   │   │   ├── skincare.svg
+│   │   │   │   ├── smartphone.svg
+│   │   │   │   ├── snack.svg
+│   │   │   │   ├── sofa.svg
+│   │   │   │   ├── star.svg
+│   │   │   │   ├── support.svg
+│   │   │   │   ├── t-shirt.svg
+│   │   │   │   ├── teddy-bear.svg
+│   │   │   │   ├── telegram.svg
+│   │   │   │   ├── top-categories.svg
+│   │   │   │   ├── track.svg
+│   │   │   │   ├── triple-dot.svg
+│   │   │   │   ├── truck-1.svg
+│   │   │   │   ├── truck.svg
+│   │   │   │   ├── twitter-1.svg
+│   │   │   │   ├── twitter.svg
+│   │   │   │   ├── twitter_filled.svg
+│   │   │   │   ├── united-kingdom.svg
+│   │   │   │   ├── united-states.svg
+│   │   │   │   ├── upload.svg
+│   │   │   │   ├── user-1.svg
+│   │   │   │   ├── user-2.svg
+│   │   │   │   ├── user.svg
+│   │   │   │   ├── user_filled.svg
+│   │   │   │   ├── verify.svg
+│   │   │   │   ├── voice-recorder.svg
+│   │   │   │   ├── watch.svg
+│   │   │   │   ├── wheat-flour.svg
+│   │   │   │   ├── wheel.svg
+│   │   │   │   ├── woman.svg
+│   │   │   │   ├── women-dress.svg
+│   │   │   │   ├── x.svg
+│   │   │   │   ├── yogurt.svg
+│   │   │   │   ├── youtube-1.svg
+│   │   │   │   ├── youtube.svg
+│   │   │   │   └── youtube_filled.svg
+│   │   │   ├── illustrations
+│   │   │   │   ├── 1.svg
+│   │   │   │   ├── 2.svg
+│   │   │   │   ├── 404.svg
+│   │   │   │   ├── announcement.svg
+│   │   │   │   ├── baby.svg
+│   │   │   │   ├── business_deal.svg
+│   │   │   │   ├── dashboard
+│   │   │   │   │   └── welcome.svg
+│   │   │   │   ├── designer.svg
+│   │   │   │   ├── dreamer.svg
+│   │   │   │   ├── lighthouse.svg
+│   │   │   │   ├── mobile-message.svg
+│   │   │   │   ├── party-popper.svg
+│   │   │   │   ├── posting_photo.svg
+│   │   │   │   └── upgrade.svg
+│   │   │   ├── landing
+│   │   │   │   ├── admin-dashboard.png
+│   │   │   │   ├── bonik.svg
+│   │   │   │   ├── customer
+│   │   │   │   │   ├── add-address.png
+│   │   │   │   │   ├── add-new-addresses.jpg
+│   │   │   │   │   ├── edit-payment.jpg
+│   │   │   │   │   ├── edit-profile.jpg
+│   │   │   │   │   ├── my-addresses.jpg
+│   │   │   │   │   ├── order-details.jpg
+│   │   │   │   │   ├── order-list.jpg
+│   │   │   │   │   ├── page-1.png
+│   │   │   │   │   ├── page-2.png
+│   │   │   │   │   ├── page-3.png
+│   │   │   │   │   ├── page-4.png
+│   │   │   │   │   ├── page-5.png
+│   │   │   │   │   ├── page-6.png
+│   │   │   │   │   ├── page-7.png
+│   │   │   │   │   ├── page-8.png
+│   │   │   │   │   ├── page-9.png
+│   │   │   │   │   ├── payment.jpg
+│   │   │   │   │   ├── profile.jpg
+│   │   │   │   │   ├── support-ticket-detials.jpg
+│   │   │   │   │   ├── support-ticket.jpg
+│   │   │   │   │   └── wish-list.jpg
+│   │   │   │   ├── fashion-2.jpg
+│   │   │   │   ├── fashion-3.jpg
+│   │   │   │   ├── furniture.png
+│   │   │   │   ├── gift-shop.png
+│   │   │   │   ├── grocery1.png
+│   │   │   │   ├── grocery3.png
+│   │   │   │   ├── healthbeauty.png
+│   │   │   │   ├── home
+│   │   │   │   │   ├── fashion-2.jpg
+│   │   │   │   │   ├── fashion-3.jpg
+│   │   │   │   │   ├── furniture.jpg
+│   │   │   │   │   ├── gadget-electronics.jpg
+│   │   │   │   │   ├── gift-shop.jpg
+│   │   │   │   │   ├── grocery1.jpg
+│   │   │   │   │   ├── grocery2.jpg
+│   │   │   │   │   ├── grocery3.jpg
+│   │   │   │   │   ├── healthbeauty.jpg
+│   │   │   │   │   ├── market-2.jpg
+│   │   │   │   │   └── super-store.jpg
+│   │   │   │   ├── inner-pages.png
+│   │   │   │   ├── landing-bg-1-old.svg
+│   │   │   │   ├── landing-bg-1.svg
+│   │   │   │   ├── landing-bg-2.svg
+│   │   │   │   ├── niche-demos.png
+│   │   │   │   ├── page-1.png
+│   │   │   │   ├── page-2.png
+│   │   │   │   ├── page-3.png
+│   │   │   │   ├── page-4.png
+│   │   │   │   ├── page-group-2.png
+│   │   │   │   ├── page-group-3.png
+│   │   │   │   ├── page-group-old.png
+│   │   │   │   ├── page-group.png
+│   │   │   │   ├── preview.png
+│   │   │   │   ├── product-model.png
+│   │   │   │   ├── rest-api-endpoint.png
+│   │   │   │   ├── shop
+│   │   │   │   │   ├── cart.jpg
+│   │   │   │   │   ├── checkout-alternative.jpg
+│   │   │   │   │   ├── checkout.jpg
+│   │   │   │   │   ├── product-details.jpg
+│   │   │   │   │   ├── sale-page-1.jpg
+│   │   │   │   │   ├── sale-page-2.jpg
+│   │   │   │   │   ├── search-product.jpg
+│   │   │   │   │   ├── shop-list.jpg
+│   │   │   │   │   └── vendor-store.jpg
+│   │   │   │   ├── user-dashboard.png
+│   │   │   │   └── vendor
+│   │   │   │       ├── account-setting.jpg
+│   │   │   │       ├── brands.jpg
+│   │   │   │       ├── categories.jpg
+│   │   │   │       ├── create-product.jpg
+│   │   │   │       ├── customers.jpg
+│   │   │   │       ├── dashboard.jpg
+│   │   │   │       ├── earning-history.jpg
+│   │   │   │       ├── order-details.jpg
+│   │   │   │       ├── order-list.jpg
+│   │   │   │       ├── package-payment.jpg
+│   │   │   │       ├── payout-list.jpg
+│   │   │   │       ├── payout-request.jpg
+│   │   │   │       ├── payout-settings.jpg
+│   │   │   │       ├── product-list.jpg
+│   │   │   │       ├── refund-request.jpg
+│   │   │   │       ├── refund-setting.jpg
+│   │   │   │       ├── reviews.jpg
+│   │   │   │       ├── seller-list.jpg
+│   │   │   │       ├── seller-package.jpg
+│   │   │   │       ├── shop-settings.jpg
+│   │   │   │       ├── site-settings.jpg
+│   │   │   │       ├── support-tickets.jpg
+│   │   │   │       ├── vendor-earning.jpg
+│   │   │   │       ├── vendor-payout-requests.jpg
+│   │   │   │       ├── vendor-payouts.jpg
+│   │   │   │       ├── vendor-product-reviews.jpg
+│   │   │   │       └── vendor-refund-requests.jpg
+│   │   │   ├── logo-old.svg
+│   │   │   ├── logo.svg
+│   │   │   ├── logo2-old.svg
+│   │   │   ├── logo2.svg
+│   │   │   ├── logos
+│   │   │   │   ├── carousel.png
+│   │   │   │   ├── chart-js.png
+│   │   │   │   ├── figma.svg
+│   │   │   │   ├── formik.png
+│   │   │   │   ├── google.svg
+│   │   │   │   ├── mui.svg
+│   │   │   │   ├── next-js.png
+│   │   │   │   ├── react-dropzone.png
+│   │   │   │   ├── react.png
+│   │   │   │   ├── sass.png
+│   │   │   │   ├── shopping-bag.svg
+│   │   │   │   ├── styled-component.png
+│   │   │   │   ├── styled-system.png
+│   │   │   │   ├── typescript.png
+│   │   │   │   ├── u.png
+│   │   │   │   ├── v.png
+│   │   │   │   └── webpack.png
+│   │   │   ├── models
+│   │   │   │   ├── model-1.png
+│   │   │   │   ├── model-2.png
+│   │   │   │   ├── model-3.png
+│   │   │   │   └── 'mohammad-faruque-SpIKPT8zeAs-unsplash-removebg-preview 1.png'
+│   │   │   ├── newsletter
+│   │   │   │   ├── bg-1.png
+│   │   │   │   ├── bg-2.png
+│   │   │   │   ├── bg-3.png
+│   │   │   │   ├── bg-4.png
+│   │   │   │   └── bg-5.png
+│   │   │   ├── order-confirm.png
+│   │   │   ├── payment-card
+│   │   │   │   ├── 001-paypal.svg
+│   │   │   │   ├── 002-mastercard.svg
+│   │   │   │   ├── '003-american express.svg'
+│   │   │   │   ├── 004-visa.svg
+│   │   │   │   ├── 005-discover.svg
+│   │   │   │   ├── '006-western union.svg'
+│   │   │   │   ├── 007-cirrus.svg
+│   │   │   │   ├── 008-ideal.svg
+│   │   │   │   ├── 009-jcb.svg
+│   │   │   │   ├── 010-eway.svg
+│   │   │   │   ├── 011-wirecard.svg
+│   │   │   │   ├── 012-solo.svg
+│   │   │   │   ├── 013-hsbc.svg
+│   │   │   │   ├── 014-ebay.svg
+│   │   │   │   ├── 015-citi.svg
+│   │   │   │   ├── '016-direct debit.svg'
+│   │   │   │   ├── 017-symbols.svg
+│   │   │   │   ├── '018-dinners club.svg'
+│   │   │   │   ├── 019-postepay.svg
+│   │   │   │   ├── 020-sage.svg
+│   │   │   │   ├── 021-switch.svg
+│   │   │   │   ├── 022-maestro.svg
+│   │   │   │   ├── 023-paypoint.svg
+│   │   │   │   ├── '024-pick n pay.svg'
+│   │   │   │   ├── 025-worldpay.svg
+│   │   │   │   ├── '026-union pay.svg'
+│   │   │   │   ├── '027-better business bureau.svg'
+│   │   │   │   ├── 028-2co.svg
+│   │   │   │   ├── 029-authorize.svg
+│   │   │   │   ├── 030-bluepay.svg
+│   │   │   │   ├── 031-clickbank.svg
+│   │   │   │   ├── 032-wepay.svg
+│   │   │   │   ├── maestro.png
+│   │   │   │   ├── master-card.png
+│   │   │   │   ├── paypal-2.png
+│   │   │   │   ├── paypal.png
+│   │   │   │   ├── visa-2.png
+│   │   │   │   └── visa.png
+│   │   │   ├── payment-methods
+│   │   │   │   ├── amazon.png
+│   │   │   │   ├── amex.png
+│   │   │   │   ├── Amex.svg
+│   │   │   │   ├── cirrus.png
+│   │   │   │   ├── maestro.png
+│   │   │   │   ├── master-card.png
+│   │   │   │   ├── Mastercard.svg
+│   │   │   │   ├── paypal.png
+│   │   │   │   ├── PayPal.svg
+│   │   │   │   ├── shopify.png
+│   │   │   │   ├── skrill.png
+│   │   │   │   ├── visa-electron.png
+│   │   │   │   ├── visa.png
+│   │   │   │   ├── Visa.svg
+│   │   │   │   └── western-union.png
+│   │   │   ├── products
+│   │   │   │   ├── '2 6.png'
+│   │   │   │   ├── '3 50092.png'
+│   │   │   │   ├── alexa-plus.png
+│   │   │   │   ├── apple-watch-0.png
+│   │   │   │   ├── apple-watch-1.png
+│   │   │   │   ├── apple-watch-2.png
+│   │   │   │   ├── apple-watch-3.png
+│   │   │   │   ├── apple-watch.png
+│   │   │   │   ├── Automotive
+│   │   │   │   │   ├── 1.Ford2019.png
+│   │   │   │   │   ├── 2.Audi2017.png
+│   │   │   │   │   ├── 3.Tesla2015.png
+│   │   │   │   │   ├── 4.Porsche2018.png
+│   │   │   │   │   ├── 5.Ford2018.png
+│   │   │   │   │   ├── 6.Ford2020.png
+│   │   │   │   │   ├── 7.Mitsubishi2018.png
+│   │   │   │   │   ├── 8.BMW2019.png
+│   │   │   │   │   ├── 9.Toyota2018.png
+│   │   │   │   │   ├── 10.MercedesBenz2019.png
+│   │   │   │   │   ├── 11.Ford2015.png
+│   │   │   │   │   ├── 12.MercedesBenz2018.png
+│   │   │   │   │   ├── 13.MercedesBenz2017.png
+│   │   │   │   │   ├── 14.ACURA2015.png
+│   │   │   │   │   ├── 15.Maclaren2010.png
+│   │   │   │   │   ├── 16.CHERY2019.png
+│   │   │   │   │   ├── 17.AstonMartin2015.png
+│   │   │   │   │   ├── 18.Audi2019.png
+│   │   │   │   │   ├── 19.Nissan2017.png
+│   │   │   │   │   ├── 20.Hyundai2020.png
+│   │   │   │   │   ├── 21.TATA2015.png
+│   │   │   │   │   ├── 22.Ford2011.png
+│   │   │   │   │   ├── 23.Ferrari2020.png
+│   │   │   │   │   ├── 24.BMW2020.png
+│   │   │   │   │   ├── 25.Mazda2014.png
+│   │   │   │   │   ├── 26.KIA2020.png
+│   │   │   │   │   ├── 27.Chevrolet2013.png
+│   │   │   │   │   └── 28.Porsche2020.png
+│   │   │   │   ├── bag.png
+│   │   │   │   ├── beauty-cream.png
+│   │   │   │   ├── 'bg (1).png'
+│   │   │   │   ├── bg-gradient.png
+│   │   │   │   ├── 'bgbeauty (1).png'
+│   │   │   │   ├── 'bgbeauty (2).png'
+│   │   │   │   ├── bgbeauty.png
+│   │   │   │   ├── bgchair1.png
+│   │   │   │   ├── bgchair2.png
+│   │   │   │   ├── bgchair3.png
+│   │   │   │   ├── bgchair4.png
+│   │   │   │   ├── bgchair5.png
+│   │   │   │   ├── bgchair6.png
+│   │   │   │   ├── bgearphone.png
+│   │   │   │   ├── 'bghead-phone (1).png'
+│   │   │   │   ├── 'bghead-phone (2).png'
+│   │   │   │   ├── bghead-phone.png
+│   │   │   │   ├── bglaptop1.png
+│   │   │   │   ├── bglaptop2.png
+│   │   │   │   ├── bglaptop3.png
+│   │   │   │   ├── bglaptop4.png
+│   │   │   │   ├── bglaptop5.png
+│   │   │   │   ├── bglaptop6.png
+│   │   │   │   ├── bglight.png
+│   │   │   │   ├── bgmobile1.png
+│   │   │   │   ├── bgmobile2.png
+│   │   │   │   ├── bgmobile3.png
+│   │   │   │   ├── bgmobile4.png
+│   │   │   │   ├── bgmobile5.png
+│   │   │   │   ├── bgmobile6.png
+│   │   │   │   ├── bgvessel.png
+│   │   │   │   ├── bgwatch.png
+│   │   │   │   ├── Bikes
+│   │   │   │   │   ├── 1.CampagnoldWX-R.png
+│   │   │   │   │   ├── 2.Hero2017.png
+│   │   │   │   │   ├── 3.Spec2015.png
+│   │   │   │   │   ├── 4.Kawasaki2018.png
+│   │   │   │   │   ├── 5.MustangWTZ.png
+│   │   │   │   │   ├── 6.Honda2019.png
+│   │   │   │   │   ├── '7.NinjaKawasaki 2016.png'
+│   │   │   │   │   ├── 8.CozimaLOOK.png
+│   │   │   │   │   ├── 9.HeroHonda2017.png
+│   │   │   │   │   ├── 10.MintanKRT.png
+│   │   │   │   │   ├── 11.Kawasaki2020.png
+│   │   │   │   │   ├── 12.Spec2020.png
+│   │   │   │   │   ├── 13.RoyalEnfield2010.png
+│   │   │   │   │   ├── 14.RoaylEnfield2011.png
+│   │   │   │   │   ├── 15.PrimeXTZ.png
+│   │   │   │   │   ├── 16.RoyalEnfield2012.png
+│   │   │   │   │   ├── 17.SpecAlpha.png
+│   │   │   │   │   ├── 18.NinjaKawasaki2019.png
+│   │   │   │   │   ├── 19.FujiTRX.png
+│   │   │   │   │   ├── 20.CBR2022.png
+│   │   │   │   │   ├── 21.TarzT3.png
+│   │   │   │   │   ├── 22.YamahaR15Black.png
+│   │   │   │   │   ├── 23.YamahaR15Blue.png
+│   │   │   │   │   ├── 24.Revel2020.png
+│   │   │   │   │   └── 25.JacksonTB1.png
+│   │   │   │   ├── blog-1.png
+│   │   │   │   ├── blog-2.png
+│   │   │   │   ├── blu-tshirt.png
+│   │   │   │   ├── bluetooth-headphone.png
+│   │   │   │   ├── bonsai-tree.png
+│   │   │   │   ├── brand.png
+│   │   │   │   ├── camera-1.png
+│   │   │   │   ├── camera.png
+│   │   │   │   ├── casmatics.jpg
+│   │   │   │   ├── categories
+│   │   │   │   │   ├── backpack.png
+│   │   │   │   │   ├── bag.png
+│   │   │   │   │   ├── belt.png
+│   │   │   │   │   ├── cap.png
+│   │   │   │   │   ├── hat.png
+│   │   │   │   │   ├── mini-bag.png
+│   │   │   │   │   ├── pant.png
+│   │   │   │   │   ├── sandal.png
+│   │   │   │   │   ├── shirt.png
+│   │   │   │   │   ├── sneaker.png
+│   │   │   │   │   ├── sunglass.png
+│   │   │   │   │   ├── t-shirt.png
+│   │   │   │   │   └── watch.png
+│   │   │   │   ├── chair-and-clothes.png
+│   │   │   │   ├── chair-with-clothes.png
+│   │   │   │   ├── clothes.png
+│   │   │   │   ├── drone.png
+│   │   │   │   ├── Electronics
+│   │   │   │   │   ├── 1.Siri2020.png
+│   │   │   │   │   ├── 2.COSOR1.png
+│   │   │   │   │   ├── 3.PanasonicCharge.png
+│   │   │   │   │   ├── 4.LumixDSLR.png
+│   │   │   │   │   ├── 5.AtechCam1080p.png
+│   │   │   │   │   ├── 6.Sonya9.png
+│   │   │   │   │   ├── 7.beatsw3.png
+│   │   │   │   │   ├── 8.BenQ2020.png
+│   │   │   │   │   ├── 9.SonyTV1080p.png
+│   │   │   │   │   ├── 10.SonyPS4.png
+│   │   │   │   │   ├── 11.Netgear2020.png
+│   │   │   │   │   ├── 12.SonyBGB.png
+│   │   │   │   │   ├── 13.LGProducts.png
+│   │   │   │   │   ├── 14.Panasonic2019.png
+│   │   │   │   │   ├── 15.DuneHD.png
+│   │   │   │   │   ├── 16.SonyCCTV.png
+│   │   │   │   │   ├── 17.VisionBlender.png
+│   │   │   │   │   ├── 18.VisionMicrowaveOven.png
+│   │   │   │   │   ├── 19.LGWashingMachine.png
+│   │   │   │   │   ├── 20.TascuigoAriadryLight.png
+│   │   │   │   │   ├── 21.AmazonPackage.png
+│   │   │   │   │   ├── 22.VisionProducts.png
+│   │   │   │   │   ├── 23.LGOffers.png
+│   │   │   │   │   ├── 24.TelloDrone.png
+│   │   │   │   │   ├── 25.VivoMobiles.png
+│   │   │   │   │   ├── 26.TelloSuperDrones.png
+│   │   │   │   │   ├── 27.PinkWirelessEarphones.png
+│   │   │   │   │   ├── 28.RangsMobile.png
+│   │   │   │   │   ├── 29.AppleEarphones.png
+│   │   │   │   │   ├── 30.Nokiaandroidone.png
+│   │   │   │   │   ├── 31.Symphonlights.png
+│   │   │   │   │   ├── 32.iphone7.png
+│   │   │   │   │   ├── 33.beatswirelessearphones.png
+│   │   │   │   │   ├── 34.HTC2018.png
+│   │   │   │   │   ├── 35.beatsbluetoothearpohones.png
+│   │   │   │   │   └── 36.sbsWirelessEarphones.png
+│   │   │   │   ├── Fashion
+│   │   │   │   │   ├── Accessories
+│   │   │   │   │   │   ├── 1.SilverCap.png
+│   │   │   │   │   │   ├── 2.FunkySilverCap.png
+│   │   │   │   │   │   ├── 3.BrownCap.png
+│   │   │   │   │   │   ├── 4.OrangeCap.png
+│   │   │   │   │   │   ├── 5.VegasBlueCap.png
+│   │   │   │   │   │   ├── 6.RayBanGreen.png
+│   │   │   │   │   │   ├── 7.PoliceGrayEyeglasses.png
+│   │   │   │   │   │   ├── 8.RayBanMattBlack.png
+│   │   │   │   │   │   ├── 9.RayBanBlack.png
+│   │   │   │   │   │   ├── 10.RayBanOcean.png
+│   │   │   │   │   │   ├── 11.SunglassesCollection.png
+│   │   │   │   │   │   ├── 12.Xiaomimiband2.png
+│   │   │   │   │   │   ├── 13.FossilWatchBrown.png
+│   │   │   │   │   │   ├── 14.MVMTMWatchBlack.png
+│   │   │   │   │   │   ├── 15.BarihoWatchBlack.png
+│   │   │   │   │   │   ├── 16.SkmeiWatchBlack.png
+│   │   │   │   │   │   ├── 17.DigitalWristWatch.png
+│   │   │   │   │   │   └── 18.DragonRedWristWatch.png
+│   │   │   │   │   ├── Clothes
+│   │   │   │   │   │   ├── 1.SilverHighNeckSweater.png
+│   │   │   │   │   │   ├── 2.BlueBlossomFrock.png
+│   │   │   │   │   │   ├── 3.NBLHoopHoodie.png
+│   │   │   │   │   │   ├── 4.DenimBlueJeans.png
+│   │   │   │   │   │   ├── 5.BrownCheckFrock.png
+│   │   │   │   │   │   ├── 6.FashionCollectionforKids.png
+│   │   │   │   │   │   ├── 7.DenimClassicBlueJeans.png
+│   │   │   │   │   │   ├── 8.RoyalBlackSuitPant.png
+│   │   │   │   │   │   ├── 9.DenimGabardineCollection.png
+│   │   │   │   │   │   ├── 10.LandsJacket.png
+│   │   │   │   │   │   ├── 11.StripedCasual.png
+│   │   │   │   │   │   ├── 12.PinkKidsWear.png
+│   │   │   │   │   │   ├── 13.HighWaistedGabardine.png
+│   │   │   │   │   │   ├── 14.BlueTrousers.png
+│   │   │   │   │   │   ├── 15.GreenSkiJacket.png
+│   │   │   │   │   │   ├── 16.DoubleWoolOvercoat.png
+│   │   │   │   │   │   ├── 17.StrechCargoPants.png
+│   │   │   │   │   │   ├── 18.WoolOvercoatWomen.png
+│   │   │   │   │   │   ├── 19.BlackWhiteSweater.png
+│   │   │   │   │   │   ├── 20.GrayOvercoatWomen.png
+│   │   │   │   │   │   ├── 21.YellowCasualSweater.png
+│   │   │   │   │   │   ├── 22.CasualGrayPants.png
+│   │   │   │   │   │   ├── 23.AdidasWinterJacket.png
+│   │   │   │   │   │   ├── 24.OliveCasualSweater.png
+│   │   │   │   │   │   └── 25.KidsRainbowSweater.png
+│   │   │   │   │   ├── Jewellery
+│   │   │   │   │   │   ├── 1.Heavy22ktGoldNecklaceSet.png
+│   │   │   │   │   │   ├── '2.Black Metal Ring.png'
+│   │   │   │   │   │   ├── 2.BlackMetalRing.png
+│   │   │   │   │   │   ├── '3.Diamond Silver Ring.png'
+│   │   │   │   │   │   ├── 3.DiamondSilverRing.png
+│   │   │   │   │   │   ├── '4.Black Stones Necklace.png'
+│   │   │   │   │   │   ├── 4.BlackStonesNecklace.png
+│   │   │   │   │   │   ├── '5.Indian Pearl Earrings.png'
+│   │   │   │   │   │   ├── 5.IndianPearlEarrings.png
+│   │   │   │   │   │   ├── '6.Indian Copper Earrings.png'
+│   │   │   │   │   │   ├── 6.IndianCopperEarrings.png
+│   │   │   │   │   │   ├── '7.Indian Pearl Square Stone Necklace.png'
+│   │   │   │   │   │   ├── 7.IndianPearlSquareStoneNecklace.png
+│   │   │   │   │   │   ├── 8.IndianPearlThreadEarrings.png
+│   │   │   │   │   │   ├── '8.Indian Pearl Thread Earrings.png'
+│   │   │   │   │   │   ├── 9.Heavy20ktGoldNecklace.png
+│   │   │   │   │   │   ├── '9.Heavy 20kt Gold Necklace.png'
+│   │   │   │   │   │   ├── 10.Indian8ktGoldBracelet.png
+│   │   │   │   │   │   ├── '10.Indian 8kt Gold Bracelet.png'
+│   │   │   │   │   │   ├── 11.Heavy5ktIndianEarrings.png
+│   │   │   │   │   │   ├── '11.Heavy 5kt Indian Earrings.png'
+│   │   │   │   │   │   ├── '12.Blue Stone Locket.png'
+│   │   │   │   │   │   ├── 12.BlueStoneLocket.png
+│   │   │   │   │   │   ├── 13.BlackStoneModernLocket.png
+│   │   │   │   │   │   ├── '13.Black Stone Modern Locket.png'
+│   │   │   │   │   │   ├── 14.DiamondWeddingRings.png
+│   │   │   │   │   │   ├── '14.Diamond Wedding Rings.png'
+│   │   │   │   │   │   ├── 15.Indian6ktGoldEarrings.png
+│   │   │   │   │   │   ├── '15.Indian 6kt Gold Earrings.png'
+│   │   │   │   │   │   ├── 16.CustomMadeThreadsBeadsNecklaceSet.png
+│   │   │   │   │   │   ├── '16.Custom Made Threads Beads Necklace Set.png'
+│   │   │   │   │   │   ├── '17.Heavy Stone Colorful Necklace.png'
+│   │   │   │   │   │   ├── 17.HeavyStoneColorfulNecklace.png
+│   │   │   │   │   │   ├── '18.Beads and Threads Simple Earrings.png'
+│   │   │   │   │   │   ├── 18.BeadsandThreadsSimpleEarrings.png
+│   │   │   │   │   │   ├── '19.Tamil Wedding Necklace Set.png'
+│   │   │   │   │   │   ├── 19.TamilWeddingNecklaceSet.png
+│   │   │   │   │   │   ├── 20.Shahi21ktGoldNecklaceSet.png
+│   │   │   │   │   │   ├── '20.Shahi 21kt Gold Necklace Set.png'
+│   │   │   │   │   │   ├── '21.Feathers and Beads Bohemian Necklace.png'
+│   │   │   │   │   │   ├── 21.FeathersandBeadsBohemianNecklace.png
+│   │   │   │   │   │   ├── '22.Red Peacock Tail Earrings.png'
+│   │   │   │   │   │   ├── 22.RedPeacockTailEarrings.png
+│   │   │   │   │   │   ├── '23.Heavy 13kt Gold Wedding Necklace Set.png'
+│   │   │   │   │   │   └── 23.Heavy13ktGoldWeddingNecklaceSet.png
+│   │   │   │   │   └── Shoes
+│   │   │   │   │       ├── '1.Nike Red.png'
+│   │   │   │   │       ├── 1.NikeRed.png
+│   │   │   │   │       ├── 2.NorthStarCream.png
+│   │   │   │   │       ├── '2.North Star Cream.png'
+│   │   │   │   │       ├── '3.Puma Black.png'
+│   │   │   │   │       ├── 3.PumaBlack.png
+│   │   │   │   │       ├── 4.NikeFluffyYellow.png
+│   │   │   │   │       ├── '4.Nike Fluffy Yellow.png'
+│   │   │   │   │       ├── 5.NikeBlue.png
+│   │   │   │   │       ├── '5.Nike Blue.png'
+│   │   │   │   │       ├── 6.NorthStarBlack.png
+│   │   │   │   │       ├── '6.North Star Black.png'
+│   │   │   │   │       ├── 7.NikeGreen.png
+│   │   │   │   │       ├── '7.Nike Green.png'
+│   │   │   │   │       ├── '8.Nike Skill.png'
+│   │   │   │   │       ├── 8.NikeSkill.png
+│   │   │   │   │       ├── '9.Adidas Green.png'
+│   │   │   │   │       ├── 9.AdidasGreen.png
+│   │   │   │   │       ├── '10.Adidas White.png'
+│   │   │   │   │       ├── 10.AdidasWhite.png
+│   │   │   │   │       ├── '11.Flow white.png'
+│   │   │   │   │       ├── 11.Flowwhite.png
+│   │   │   │   │       ├── '12._Nike Air White.png'
+│   │   │   │   │       ├── 12.NikeAirWhite.png
+│   │   │   │   │       ├── '13.Puma Red.png'
+│   │   │   │   │       ├── 13.PumaRed.png
+│   │   │   │   │       ├── 14.NikePink.png
+│   │   │   │   │       ├── '14.Nike Pink.png'
+│   │   │   │   │       ├── '15.Nike Mint.png'
+│   │   │   │   │       ├── 15.NikeMint.png
+│   │   │   │   │       ├── '16.Nike Silver.png'
+│   │   │   │   │       ├── 16.NikeSilver.png
+│   │   │   │   │       ├── 17.NorthStarOlive.png
+│   │   │   │   │       ├── '17.North Star Olive.png'
+│   │   │   │   │       ├── 18.AdidasRainbow.png
+│   │   │   │   │       ├── '18.Adidas Rainbow.png'
+│   │   │   │   │       ├── '19.Nike Yellow Black.png'
+│   │   │   │   │       ├── 19.NikeYellowBlack.png
+│   │   │   │   │       ├── '20.Merrell Woods.png'
+│   │   │   │   │       ├── 20.MerrellWoods.png
+│   │   │   │   │       ├── '21.North Star Blue.png'
+│   │   │   │   │       ├── 21.NorthStarBlue.png
+│   │   │   │   │       ├── 22.NikeBlackRed.png
+│   │   │   │   │       ├── '22.Nike Black Red.png'
+│   │   │   │   │       ├── '23.Nike Silver Race.png'
+│   │   │   │   │       └── 23.NikeSilverRace.png
+│   │   │   │   ├── flash-1.png
+│   │   │   │   ├── flash-2.png
+│   │   │   │   ├── flash-3.png
+│   │   │   │   ├── flash-4.png
+│   │   │   │   ├── formal-shirt.png
+│   │   │   │   ├── game-box.png
+│   │   │   │   ├── gaming-gear.png
+│   │   │   │   ├── garlic.png
+│   │   │   │   ├── golden-watch.png
+│   │   │   │   ├── green-plant.png
+│   │   │   │   ├── Groceries
+│   │   │   │   │   ├── 1.SaktiSambarPowder.png
+│   │   │   │   │   ├── '1.Sakti Sambar Powder.png'
+│   │   │   │   │   ├── '2.Premium Grocery Collection.png'
+│   │   │   │   │   ├── 2.PremiumGroceryCollection.png
+│   │   │   │   │   ├── 3.PremiumGroceryPack.png
+│   │   │   │   │   ├── '3.Premium Grocery Pack.png'
+│   │   │   │   │   ├── '4.Freash Real Chole Masala.png'
+│   │   │   │   │   ├── 4.FreashRealCholeMasala.png
+│   │   │   │   │   ├── 5.GumPack.png
+│   │   │   │   │   ├── '5.Gum Pack.png'
+│   │   │   │   │   ├── 6.IndianGroceryProductsPack.png
+│   │   │   │   │   ├── '6.Indian Grocery Products Pack.png'
+│   │   │   │   │   ├── 7.SaffolaGoldOil.png
+│   │   │   │   │   ├── '7.Saffola Gold Oil.png'
+│   │   │   │   │   ├── 8.ColgateAdvanceProtectionToothpaste.png
+│   │   │   │   │   ├── '8.Colgate Advance Protection Toothpaste.png'
+│   │   │   │   │   ├── 9.CatchSprinklersChatMasala.png
+│   │   │   │   │   ├── '9.Catch Sprinklers Chat Masala.png'
+│   │   │   │   │   ├── 10.CatchItalianSeasoningGrinder.png
+│   │   │   │   │   ├── '10.Catch Italian Seasoning Grinder.png'
+│   │   │   │   │   ├── 11.TadkaGaramMasala.png
+│   │   │   │   │   ├── '11.Tadka Garam Masala.png'
+│   │   │   │   │   ├── 12.ThanksaLatteCoffee.png
+│   │   │   │   │   ├── '12.Thanks a Latte Coffee.png'
+│   │   │   │   │   ├── 13.GroceryPackageOffer.png
+│   │   │   │   │   ├── '13.Grocery Package Offer.png'
+│   │   │   │   │   ├── '14.ACI Products.png'
+│   │   │   │   │   ├── 14.ACIProducts.png
+│   │   │   │   │   ├── 15.LightskinSoap.png
+│   │   │   │   │   ├── '15.Lightskin Soap.png'
+│   │   │   │   │   ├── 16.ArtidoroRodriguezCoffee.png
+│   │   │   │   │   ├── '16.Artidoro Rodriguez Coffee.png'
+│   │   │   │   │   ├── 17.DoveSensitiveSkinSoap.png
+│   │   │   │   │   ├── '17.Dove Sensitive Skin Soap.png'
+│   │   │   │   │   ├── 18.AniketGaramMasala.png
+│   │   │   │   │   ├── '18.Aniket Garam Masala.png'
+│   │   │   │   │   ├── 19.PortsmouthSoaps.png
+│   │   │   │   │   ├── '19.Portsmouth Soaps.png'
+│   │   │   │   │   ├── 20.PremiumKitchenPack.png
+│   │   │   │   │   ├── '20.Premium Kitchen Pack.png'
+│   │   │   │   │   ├── 21.MegaSardines.png
+│   │   │   │   │   ├── '21.Mega Sardines.png'
+│   │   │   │   │   ├── '22.Organic Company Products.png'
+│   │   │   │   │   ├── 22.OrganicCompanyProducts.png
+│   │   │   │   │   ├── 23.EarnestSardines.png
+│   │   │   │   │   ├── '23.Earnest Sardines.png'
+│   │   │   │   │   ├── '24.Parachute Coconut Oil.png'
+│   │   │   │   │   ├── 24.ParachuteCoconutOil.png
+│   │   │   │   │   ├── '25.Cafe Torrefaction Fraiche.png'
+│   │   │   │   │   ├── 25.CafeTorrefactionFraiche.png
+│   │   │   │   │   ├── 26.MadinaSoaps.png
+│   │   │   │   │   ├── '26.Madina Soaps.png'
+│   │   │   │   │   ├── 27.SardinesPack.png
+│   │   │   │   │   ├── '27.Sardines Pack.png'
+│   │   │   │   │   ├── '28.Turmeric Powder.png'
+│   │   │   │   │   └── 28.TurmericPowder.png
+│   │   │   │   ├── headphone.png
+│   │   │   │   ├── 'Health & Beauty'
+│   │   │   │   │   ├── '1.Biossance Oil.png'
+│   │   │   │   │   ├── '2.Amorpacific Products.png'
+│   │   │   │   │   ├── '3.Covergirl Vitalist.png'
+│   │   │   │   │   ├── "4.Dr.Alka's Hair Shine.png"
+│   │   │   │   │   ├── '5.Huda Beauty Nailpolish.png'
+│   │   │   │   │   ├── '6.SKin Glow Oil.png'
+│   │   │   │   │   ├── '7.Venus Makeup Product.png'
+│   │   │   │   │   ├── '8.Volition Products.png'
+│   │   │   │   │   ├── '9.Aniise Cream.png'
+│   │   │   │   │   ├── '10.Mykirei hand Wash.png'
+│   │   │   │   │   ├── '11.Rahua Classic Conditioner.png'
+│   │   │   │   │   ├── '12.Beauty Society anti acne mask.png'
+│   │   │   │   │   ├── '13.Mistral Lipstick.png'
+│   │   │   │   │   ├── '14.Kylieskin Face Wash.png'
+│   │   │   │   │   ├── '15.Amala Products.png'
+│   │   │   │   │   ├── '16.Caudalie Hand and Nail Cream.png'
+│   │   │   │   │   ├── '17.Alkemie Glow Up.png'
+│   │   │   │   │   ├── '18.Shiseido Products.png'
+│   │   │   │   │   ├── '19.Premium Lipstick.png'
+│   │   │   │   │   ├── '20.Blemish Elixir.png'
+│   │   │   │   │   ├── '21.Red Serum and Cream.png'
+│   │   │   │   │   ├── '22.Detol Liquid Hand Wash.png'
+│   │   │   │   │   ├── '23.Dove Face Wash.png'
+│   │   │   │   │   ├── '24.Loreal Kids Extra Gentle Shampoo.png'
+│   │   │   │   │   └── '25.Mario Badescu Skin Care Shampoo.png'
+│   │   │   │   ├── Health&Beauty
+│   │   │   │   │   ├── 1.BiossanceOil.png
+│   │   │   │   │   ├── 2.AmorpacificProducts.png
+│   │   │   │   │   ├── 3.CovergirlVitalist.png
+│   │   │   │   │   ├── "4.Dr.Alka'sHairShine.png"
+│   │   │   │   │   ├── 5.HudaBeautyNailpolish.png
+│   │   │   │   │   ├── 6.SKinGlowOil.png
+│   │   │   │   │   ├── 7.VenusMakeupProduct.png
+│   │   │   │   │   ├── 8.VolitionProducts.png
+│   │   │   │   │   ├── 9.AniiseCream.png
+│   │   │   │   │   ├── 10.MykireihandWash.png
+│   │   │   │   │   ├── 11.RahuaClassicConditioner.png
+│   │   │   │   │   ├── 12.BeautySocietyantiacnemask.png
+│   │   │   │   │   ├── 13.MistralLipstick.png
+│   │   │   │   │   ├── 14.KylieskinFaceWash.png
+│   │   │   │   │   ├── 15.AmalaProducts.png
+│   │   │   │   │   ├── 16.CaudalieHandandNailCream.png
+│   │   │   │   │   ├── 17.AlkemieGlowUp.png
+│   │   │   │   │   ├── 18.ShiseidoProducts.png
+│   │   │   │   │   ├── 19.PremiumLipstick.png
+│   │   │   │   │   ├── 20.BlemishElixir.png
+│   │   │   │   │   ├── 21.RedSerumandCream.png
+│   │   │   │   │   ├── 22.DetolLiquidHandWash.png
+│   │   │   │   │   ├── 23.DoveFaceWash.png
+│   │   │   │   │   ├── 24.LorealKidsExtraGentleShampoo.png
+│   │   │   │   │   └── 25.MarioBadescuSkinCareShampoo.png
+│   │   │   │   ├── 'hiclipart.com (14).png'
+│   │   │   │   ├── 'hiclipart.com (15).png'
+│   │   │   │   ├── 'hiclipart.com (16).png'
+│   │   │   │   ├── 'hiclipart.com (18).png'
+│   │   │   │   ├── Home&Garden
+│   │   │   │   │   ├── 1.ThePoinsettiaPlant.png
+│   │   │   │   │   ├── "2.Devil'sIvyIndoorPlant.png"
+│   │   │   │   │   ├── 3.AloeVeraPlant.png
+│   │   │   │   │   ├── 4.SatinPothosPlant.png
+│   │   │   │   │   ├── 5.JapaneseMaplePlant.png
+│   │   │   │   │   ├── 6.GreenLeafPlantinGlassJar.png
+│   │   │   │   │   ├── 7.SpiderPlantinRoundGlass.png
+│   │   │   │   │   ├── 8.ChamaedoreaElegansPlantswithCeramicPot.png
+│   │   │   │   │   ├── 9.HouseplantinJapanesePot.png
+│   │   │   │   │   ├── 10.FiddleleafPlantinBambooBasket.png
+│   │   │   │   │   ├── 11.BeautifulCactusinCeramicCup.png
+│   │   │   │   │   ├── 12.CactusinJapaneseCeramic.png
+│   │   │   │   │   ├── 13.GardenRosesinBlueVase.png
+│   │   │   │   │   ├── 14.HangingPlanterswithGreenPlants.png
+│   │   │   │   │   ├── 15.TilandsiaFlexuosainWoodFrame.png
+│   │   │   │   │   ├── 16.CopperPlanterwithMixedPlants.png
+│   │   │   │   │   ├── 17.MoldedwaxagaveinJapanesePlanter.png
+│   │   │   │   │   ├── 18.GreenVaseDoilies.png
+│   │   │   │   │   ├── 19.MammillariaElongataCactus.png
+│   │   │   │   │   ├── 20.SetgreenPlasticPot25CMSBlue.png
+│   │   │   │   │   ├── 21.GrassPot15.5inch.png
+│   │   │   │   │   ├── 22.EuphorbiaLeuconeurawithOrangePot.png
+│   │   │   │   │   ├── 23.EuphorbiaLacteainRoundClayPot.png
+│   │   │   │   │   ├── 24.MixedSucculentinGlassJar.png
+│   │   │   │   │   ├── 25.PaintedLeafBegoniaPlant.png
+│   │   │   │   │   ├── 26.ArecaPalminClayPot.png
+│   │   │   │   │   └── 27.BlackCoralSansevieriaPlant.png
+│   │   │   │   ├── 'Home & Garden'
+│   │   │   │   │   ├── '1.The Poinsettia Plant.png'
+│   │   │   │   │   ├── "2.Devil's Ivy Indoor Plant.png"
+│   │   │   │   │   ├── '3.Aloe Vera Plant.png'
+│   │   │   │   │   ├── '4.Satin Pothos Plant.png'
+│   │   │   │   │   ├── '5.Japanese Maple Plant.png'
+│   │   │   │   │   ├── '6.Green Leaf Plant in Glass Jar.png'
+│   │   │   │   │   ├── '7.Spider Plant in Round Glass.png'
+│   │   │   │   │   ├── '8.Chamaedorea Elegans Plants with Ceramic Pot.png'
+│   │   │   │   │   ├── '9.Houseplant in Japanese Pot.png'
+│   │   │   │   │   ├── '10.Fiddle-leaf Plant in Bamboo Basket.png'
+│   │   │   │   │   ├── '11.Beautiful Cactus in Ceramic Cup.png'
+│   │   │   │   │   ├── '12.Cactus in Japanese Ceramic.png'
+│   │   │   │   │   ├── '13.Garden Roses in Blue Vase.png'
+│   │   │   │   │   ├── '14.Hanging Planters with Green Plants.png'
+│   │   │   │   │   ├── '15.Tilandsia Flexuosa in Wood Frame.png'
+│   │   │   │   │   ├── '16.Copper Planter with Mixed Plants.png'
+│   │   │   │   │   ├── '17.Molded wax agave in Japanese Planter.png'
+│   │   │   │   │   ├── '18.Green Vase Doilies.png'
+│   │   │   │   │   ├── '19.Mammillaria Elongata Cactus.png'
+│   │   │   │   │   ├── '20.Setgreen Plastic Pot 25CMS (Blue).png'
+│   │   │   │   │   ├── '21.Grass Pot 15.5 inch.png'
+│   │   │   │   │   ├── '22.Euphorbia Leuconeura with Orange Pot.png'
+│   │   │   │   │   ├── '23.Euphorbia Lactea in Round Clay Pot.png'
+│   │   │   │   │   ├── '24.Mixed Succulent in Glass Jar.png'
+│   │   │   │   │   ├── '25.Painted Leaf Begonia Plant.png'
+│   │   │   │   │   ├── '26.Areca Palm in Clay Pot.png'
+│   │   │   │   │   └── '27.Black Coral Sansevieria Plant.png'
+│   │   │   │   ├── imagegoggles.png
+│   │   │   │   ├── imagelipstick.png
+│   │   │   │   ├── imagemakeup.png
+│   │   │   │   ├── imageshoes.png
+│   │   │   │   ├── imagesmart-watch.png
+│   │   │   │   ├── imagetree.png
+│   │   │   │   ├── iphone-x.png
+│   │   │   │   ├── iphone-xi.png
+│   │   │   │   ├── jacket.png
+│   │   │   │   ├── jeans-pant.png
+│   │   │   │   ├── 'jim and jiko.png'
+│   │   │   │   ├── 'kisspng-organic-food-leaf-vegetable-fruit-rich-vegetables-5aa9f4d026ae09 1.png'
+│   │   │   │   ├── 'kisspng-organic-food-milk-food-gift-baskets-grocery-5abeaffc1e5b25 1.png'
+│   │   │   │   ├── kisspng-rolex-submariner-rolex-sea-dweller-rolex-datejust-rolex-watch-png-transparent-image-5a780226cb3f98.5864291415178143108325.png
+│   │   │   │   ├── ladies-dress.png
+│   │   │   │   ├── ladies-dress2.png
+│   │   │   │   ├── 'lipstick (1).png'
+│   │   │   │   ├── 'lipstick (2).png'
+│   │   │   │   ├── 'lipstick (3).png'
+│   │   │   │   ├── 'lipstick (4).png'
+│   │   │   │   ├── lipsticks.png
+│   │   │   │   ├── london-britches-2.png
+│   │   │   │   ├── london-britches.png
+│   │   │   │   ├── long-product.png
+│   │   │   │   ├── macbook.png
+│   │   │   │   ├── make-up.png
+│   │   │   │   ├── makeup.png
+│   │   │   │   ├── mask.png
+│   │   │   │   ├── mobile-1.png
+│   │   │   │   ├── mobile-2.png
+│   │   │   │   ├── Music
+│   │   │   │   │   ├── '1.6String Cheap Electric Guitar.png'
+│   │   │   │   │   ├── 1.6StringCheapElectricGuitar.png
+│   │   │   │   │   ├── '2.Affordable 4 String Tenor Banjo.png'
+│   │   │   │   │   ├── 2.Affordable4StringTenorBanjo.png
+│   │   │   │   │   ├── '3.Affordable Indian Sitar.png'
+│   │   │   │   │   ├── 3.AffordableIndianSitar.png
+│   │   │   │   │   ├── 4.DetailedPaintedAcousticGuitar.png
+│   │   │   │   │   ├── '4.Detailed Painted Acoustic Guitar.png'
+│   │   │   │   │   ├── 5.Jackson6StringFloydRose.png
+│   │   │   │   │   ├── '5.Jackson 6String Floyd Rose.png'
+│   │   │   │   │   ├── '6.Jackson 6String Fixed Bridge.png'
+│   │   │   │   │   ├── 6.Jackson6StringFixedBridge.png
+│   │   │   │   │   ├── '7.Royal Harp.png'
+│   │   │   │   │   ├── 7.RoyalHarp.png
+│   │   │   │   │   ├── 8.MidRangeTabla.png
+│   │   │   │   │   ├── '8.Mid Range Tabla.png'
+│   │   │   │   │   ├── '9.Mid Range Dhol.png'
+│   │   │   │   │   ├── 9.MidRangeDhol.png
+│   │   │   │   │   ├── 10.Buffet400Saxophone.png
+│   │   │   │   │   ├── '10.Buffet 400 Saxophone.png'
+│   │   │   │   │   ├── 11.YamahaElectricViolin.png
+│   │   │   │   │   ├── '11.Yamaha Electric Violin.png'
+│   │   │   │   │   ├── 12.CheapUkuleleOffers.png
+│   │   │   │   │   ├── '12.Cheap Ukulele Offers.png'
+│   │   │   │   │   ├── '13.Cordoba Classical Guitar.png'
+│   │   │   │   │   ├── 13.CordobaClassicalGuitar.png
+│   │   │   │   │   ├── 14.LittlePercussionInstruments.png
+│   │   │   │   │   ├── '14.Little Percussion Instruments.png'
+│   │   │   │   │   ├── '15.Pearl Snare Drum.png'
+│   │   │   │   │   ├── 15.PearlSnareDrum.png
+│   │   │   │   │   ├── '16.Yamaha Piano.png'
+│   │   │   │   │   ├── 16.YamahaPiano.png
+│   │   │   │   │   ├── '17.Roland Piano.png'
+│   │   │   │   │   ├── 17.RolandPiano.png
+│   │   │   │   │   ├── 18.Fender4stringBassGuitar.png
+│   │   │   │   │   ├── '18.Fender 4string Bass Guitar.png'
+│   │   │   │   │   ├── '19.Changer Harmonium.png'
+│   │   │   │   │   ├── 19.ChangerHarmonium.png
+│   │   │   │   │   ├── 20.RolandVDrums.png
+│   │   │   │   │   ├── '20.Roland V Drums.png'
+│   │   │   │   │   ├── '21.Ibanez GIO 6string Guitar.png'
+│   │   │   │   │   ├── 21.IbanezGIO6stringGuitar.png
+│   │   │   │   │   ├── 22.TurkishMandolin.png
+│   │   │   │   │   ├── 23.AfforableTurkishOud.png
+│   │   │   │   │   ├── 24.YamahaAcousticGuitar.png
+│   │   │   │   │   ├── 25.RolandFullSetVDrums.png
+│   │   │   │   │   ├── '25.Turkish Mandolin.png'
+│   │   │   │   │   ├── '26.Afforable Turkish Oud.png'
+│   │   │   │   │   ├── 26.RolandJupiterXSynthesizer.png
+│   │   │   │   │   ├── 27.AffordableCordobaClassicalGuitar.png
+│   │   │   │   │   ├── '27.Yamaha Acoustic Guitar.png'
+│   │   │   │   │   ├── '28.Roland Full Set V Drums.png'
+│   │   │   │   │   ├── 28.TurkishLongNeckBaglama.png
+│   │   │   │   │   ├── 29.MahaloSopranoUkuleles.png
+│   │   │   │   │   ├── '29.Roland Jupiter-X Synthesizer.png'
+│   │   │   │   │   ├── '30.Affordable Cordoba Classical Guitar.png'
+│   │   │   │   │   ├── 30.YamahaYAS280Saxophone.png
+│   │   │   │   │   ├── 31.EastmanWestburryCello.png
+│   │   │   │   │   ├── '31.Turkish Long Neck Baglama.png'
+│   │   │   │   │   ├── '32.Mahalo Soprano Ukuleles.png'
+│   │   │   │   │   ├── '33.Yamaha YAS-280 Saxophone.png'
+│   │   │   │   │   └── '34.Eastman Westburry Cello.png'
+│   │   │   │   ├── nike-black.png
+│   │   │   │   ├── nike.png
+│   │   │   │   ├── 'Orange 1kg 1.png'
+│   │   │   │   ├── 'Orange 1kg 2.png'
+│   │   │   │   ├── paper-bag.png
+│   │   │   │   ├── perfume.png
+│   │   │   │   ├── pnat.png
+│   │   │   │   ├── rayban.png
+│   │   │   │   ├── 'Rectangle 116.png'
+│   │   │   │   ├── 'Rectangle 142.png'
+│   │   │   │   ├── red-dress.png
+│   │   │   │   ├── red-shoe.png
+│   │   │   │   ├── 'Red apple 1kg 1.png'
+│   │   │   │   ├── ring-1.png
+│   │   │   │   ├── samsung.png
+│   │   │   │   ├── sdafdsfdsfsdaf.png
+│   │   │   │   ├── shoe.png
+│   │   │   │   ├── shoes-1.png
+│   │   │   │   ├── shoes-2.png
+│   │   │   │   ├── smartwatch-2.png
+│   │   │   │   ├── smartwatch.png
+│   │   │   │   ├── sunglass.png
+│   │   │   │   ├── t-shirt-1.png
+│   │   │   │   ├── t-shirt2.png
+│   │   │   │   ├── t-shirt3.png
+│   │   │   │   ├── t-shirt4.png
+│   │   │   │   ├── t-shirt5.png
+│   │   │   │   ├── t-shirt6.png
+│   │   │   │   ├── t-shirt7.png
+│   │   │   │   ├── table.png
+│   │   │   │   ├── tomato.png
+│   │   │   │   ├── 'URL List.txt'
+│   │   │   │   ├── watch-1.png
+│   │   │   │   ├── watch-2.png
+│   │   │   │   ├── watch.png
+│   │   │   │   ├── white-tops.png
+│   │   │   │   └── xiaomi-watch.png
+│   │   │   ├── promotion
+│   │   │   │   ├── offer-1.png
+│   │   │   │   ├── offer-2.png
+│   │   │   │   ├── offer-3.png
+│   │   │   │   ├── offer-4.png
+│   │   │   │   └── offer-5.png
+│   │   │   └── shops
+│   │   │       ├── hatil.png
+│   │   │       ├── 'herman miller.png'
+│   │   │       ├── otobi.png
+│   │   │       ├── steelcase.png
+│   │   │       └── zeiss.png
+│   │   └── white-fav.svg
+│   ├── next.svg
+│   └── vercel.svg
+├── README.md
+├── src
+│   ├── __server__
+│   │   ├── __db__
+│   │   │   ├── address
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── dashboard
+│   │   │   │   ├── brand.ts
+│   │   │   │   ├── categories.ts
+│   │   │   │   ├── customers.ts
+│   │   │   │   ├── data.ts
+│   │   │   │   ├── earning-history.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── orders.ts
+│   │   │   │   ├── package-payments.ts
+│   │   │   │   ├── payout-requests.ts
+│   │   │   │   ├── payouts.ts
+│   │   │   │   ├── products.ts
+│   │   │   │   ├── refundRequests.ts
+│   │   │   │   ├── reviews.ts
+│   │   │   │   └── sellers.ts
+│   │   │   ├── fashion-1
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── fashion-2
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── fashion-3
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── furniture
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── gadget
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── gift
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── grocery-1
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── grocery-2
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── grocery-3
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── health-beauty
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── market-1
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── market-2
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── orders
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── products
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── related-products
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── sales
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── shop
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── ticket
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── users
+│   │   │   │   ├── data.ts
+│   │   │   │   └── index.ts
+│   │   │   └── vendor
+│   │   │       ├── data.ts
+│   │   │       └── index.ts
+│   │   ├── index.ts
+│   │   └── mock.ts
+│   ├── app
+│   │   ├── (admin-dashboard)
+│   │   │   ├── admin
+│   │   │   │   ├── brands
+│   │   │   │   │   ├── [slug]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   ├── create
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── categories
+│   │   │   │   │   ├── [slug]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   ├── create
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── customers
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── earning-history
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── orders
+│   │   │   │   │   ├── [id]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── package-payments
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── payout-requests
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── payouts
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── products
+│   │   │   │   │   ├── [slug]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   ├── create
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   ├── page.tsx
+│   │   │   │   │   └── reviews
+│   │   │   │   │       └── page.tsx
+│   │   │   │   ├── refund-request
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── refund-setting
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── seller-package
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── sellers
+│   │   │   │       └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── vendor
+│   │   │       ├── account-settings
+│   │   │       │   └── page.tsx
+│   │   │       ├── dashboard
+│   │   │       │   └── page.tsx
+│   │   │       ├── earning-history
+│   │   │       │   └── page.tsx
+│   │   │       ├── payout-requests
+│   │   │       │   └── page.tsx
+│   │   │       ├── payout-settings
+│   │   │       │   └── page.tsx
+│   │   │       ├── payouts
+│   │   │       │   └── page.tsx
+│   │   │       ├── refund-request
+│   │   │       │   └── page.tsx
+│   │   │       ├── reviews
+│   │   │       │   └── page.tsx
+│   │   │       ├── shop-settings
+│   │   │       │   └── page.tsx
+│   │   │       ├── site-settings
+│   │   │       │   └── page.tsx
+│   │   │       └── support-tickets
+│   │   │           └── page.tsx
+│   │   ├── (auth)
+│   │   │   ├── layout.tsx
+│   │   │   ├── login
+│   │   │   │   └── page.tsx
+│   │   │   ├── register
+│   │   │   │   └── page.tsx
+│   │   │   └── reset-password
+│   │   │       └── page.tsx
+│   │   ├── (layout-1)
+│   │   │   ├── (checkout)
+│   │   │   │   ├── cart
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── checkout
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── layout.tsx
+│   │   │   │   └── payment
+│   │   │   │       └── page.tsx
+│   │   │   ├── (customer-dashboard)
+│   │   │   │   ├── address
+│   │   │   │   │   ├── [id]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── layout.tsx
+│   │   │   │   ├── orders
+│   │   │   │   │   ├── [id]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── payment-methods
+│   │   │   │   │   ├── [id]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── profile
+│   │   │   │   │   ├── [id]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── support-tickets
+│   │   │   │   │   ├── [slug]
+│   │   │   │   │   │   └── page.tsx
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── wish-list
+│   │   │   │       └── page.tsx
+│   │   │   ├── fashion-1
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion-2
+│   │   │   │   └── page.tsx
+│   │   │   ├── fashion-3
+│   │   │   │   └── page.tsx
+│   │   │   ├── furniture-shop
+│   │   │   │   └── page.tsx
+│   │   │   ├── gadget-shop
+│   │   │   │   └── page.tsx
+│   │   │   ├── gift-shop
+│   │   │   │   └── page.tsx
+│   │   │   ├── grocery-3
+│   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   ├── market-1
+│   │   │   │   └── page.tsx
+│   │   │   ├── market-2
+│   │   │   │   └── page.tsx
+│   │   │   ├── order-confirmation
+│   │   │   │   └── page.tsx
+│   │   │   ├── products
+│   │   │   │   ├── [slug]
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── search
+│   │   │   │       └── [slug]
+│   │   │   │           └── page.tsx
+│   │   │   └── shops
+│   │   │       ├── [slug]
+│   │   │       │   └── page.tsx
+│   │   │       └── page.tsx
+│   │   ├── (layout-2)
+│   │   │   ├── checkout-alternative
+│   │   │   │   └── page.tsx
+│   │   │   ├── grocery-1
+│   │   │   │   └── page.tsx
+│   │   │   ├── grocery-2
+│   │   │   │   └── page.tsx
+│   │   │   ├── health-beauty-shop
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── (sales)
+│   │   │   ├── sales-1
+│   │   │   │   └── page.tsx
+│   │   │   └── sales-2
+│   │   │       └── page.tsx
+│   │   ├── error.tsx
+│   │   ├── favicon.ico
+│   │   ├── layout.tsx
+│   │   ├── loading.tsx
+│   │   ├── not-found.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── accordion
+│   │   │   ├── accordion-header.tsx
+│   │   │   ├── accordion.tsx
+│   │   │   └── index.ts
+│   │   ├── banners
+│   │   │   ├── banner-card-1.tsx
+│   │   │   └── index.ts
+│   │   ├── BazaarCard.tsx
+│   │   ├── BazaarImage.tsx
+│   │   ├── BazaarMenu.tsx
+│   │   ├── BazaarSwitch.tsx
+│   │   ├── BazaarTextField.tsx
+│   │   ├── carousel
+│   │   │   ├── carousel-arrows.tsx
+│   │   │   ├── carousel-dots.tsx
+│   │   │   ├── carousel.tsx
+│   │   │   ├── index.ts
+│   │   │   └── styles.ts
+│   │   ├── carousel-cards
+│   │   │   ├── carousel-card-1.tsx
+│   │   │   ├── carousel-card-2.tsx
+│   │   │   ├── carousel-card-3.tsx
+│   │   │   ├── carousel-card-4.tsx
+│   │   │   └── index.ts
+│   │   ├── categories
+│   │   │   ├── category-menu-card.tsx
+│   │   │   ├── category-menu-item.tsx
+│   │   │   ├── category-menu.tsx
+│   │   │   └── mega-menu
+│   │   │       ├── mega-menu-1.tsx
+│   │   │       ├── mega-menu-2.tsx
+│   │   │       ├── mega-menu-3.tsx
+│   │   │       └── StyledMegaMenu.tsx
+│   │   ├── category-cards
+│   │   │   ├── category-card-1.tsx
+│   │   │   └── index.ts
+│   │   ├── countdown
+│   │   │   ├── count-box.tsx
+│   │   │   ├── count-down.tsx
+│   │   │   └── index.tsx
+│   │   ├── data-table
+│   │   │   ├── index.ts
+│   │   │   ├── table-header.tsx
+│   │   │   └── table-pagination.tsx
+│   │   ├── DropZone.tsx
+│   │   ├── flex-box
+│   │   │   ├── flex-between.tsx
+│   │   │   ├── flex-box.tsx
+│   │   │   ├── flex-row-center.tsx
+│   │   │   └── index.ts
+│   │   ├── footer
+│   │   │   ├── app-store.tsx
+│   │   │   ├── data.ts
+│   │   │   ├── footer-1.tsx
+│   │   │   ├── footer-2.tsx
+│   │   │   ├── footer-3.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── social-links.tsx
+│   │   │   └── styles.ts
+│   │   ├── header
+│   │   │   ├── categories-menu.tsx
+│   │   │   ├── dialog-drawer.tsx
+│   │   │   ├── header.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── login-cart-buttons.tsx
+│   │   │   ├── mobile-header.tsx
+│   │   │   ├── styles.ts
+│   │   │   └── use-header.ts
+│   │   ├── HoverBox.tsx
+│   │   ├── layouts
+│   │   │   ├── customer-dashboard
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── layout.tsx
+│   │   │   │   ├── navigation.tsx
+│   │   │   │   └── styles.tsx
+│   │   │   ├── layout-drawer.tsx
+│   │   │   ├── sales-layout
+│   │   │   │   ├── index.ts
+│   │   │   │   └── sales-layout.tsx
+│   │   │   ├── shop-layout-1
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── page-stepper.tsx
+│   │   │   │   ├── shop-layout-1.tsx
+│   │   │   │   └── stepper.tsx
+│   │   │   ├── shop-layout-2
+│   │   │   │   ├── index.ts
+│   │   │   │   └── shop-layout-2.tsx
+│   │   │   └── vendor-dashboard
+│   │   │       ├── dashboard-body-wrapper.tsx
+│   │   │       ├── dashboard-layout-context.tsx
+│   │   │       ├── dashboard-layout.tsx
+│   │   │       ├── dashboard-navbar
+│   │   │       │   ├── account-popover.tsx
+│   │   │       │   ├── dashboard-navbar.tsx
+│   │   │       │   ├── left-content.tsx
+│   │   │       │   ├── notification-popover.tsx
+│   │   │       │   ├── right-content.tsx
+│   │   │       │   └── styles.ts
+│   │   │       ├── dashboard-navigation.ts
+│   │   │       ├── dashboard-sidebar
+│   │   │       │   ├── dashboard-sidebar.tsx
+│   │   │       │   ├── logo-area.tsx
+│   │   │       │   ├── multi-level-menu.tsx
+│   │   │       │   ├── sidebar-accordion.tsx
+│   │   │       │   └── styles.ts
+│   │   │       └── index.ts
+│   │   ├── LazyImage.tsx
+│   │   ├── mini-cart
+│   │   │   ├── bottom-actions.tsx
+│   │   │   ├── cart-item.tsx
+│   │   │   ├── empty-view.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── mini-cart.tsx
+│   │   │   └── top-header.tsx
+│   │   ├── mobile-navigation
+│   │   │   ├── index.ts
+│   │   │   ├── mobile-navigation-bar-2.tsx
+│   │   │   ├── mobile-navigation-bar.tsx
+│   │   │   └── styles.ts
+│   │   ├── nav-link
+│   │   │   ├── index.ts
+│   │   │   ├── nav-link-2.tsx
+│   │   │   ├── nav-link-3.tsx
+│   │   │   └── nav-link.tsx
+│   │   ├── navbar
+│   │   │   ├── categories.tsx
+│   │   │   ├── category-based-menu
+│   │   │   │   ├── categories.tsx
+│   │   │   │   ├── category-based-menu.tsx
+│   │   │   │   ├── category-item.tsx
+│   │   │   │   ├── child-categories.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── styles.ts
+│   │   │   │   └── types.ts
+│   │   │   ├── index.ts
+│   │   │   ├── mega-menu
+│   │   │   │   ├── category-list.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── mega-menu.tsx
+│   │   │   │   ├── styles.ts
+│   │   │   │   └── types.ts
+│   │   │   ├── mobile-menu
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── mobile-menu.tsx
+│   │   │   │   ├── modified-navigation.ts
+│   │   │   │   └── render-levels.tsx
+│   │   │   ├── navbar.tsx
+│   │   │   ├── styles.ts
+│   │   │   └── types.ts
+│   │   ├── newsletter
+│   │   │   ├── index.ts
+│   │   │   ├── newsletter.tsx
+│   │   │   └── social-icons.tsx
+│   │   ├── page-sidenav
+│   │   │   ├── grocery-side-nav
+│   │   │   │   ├── grocery-side-nav.tsx
+│   │   │   │   ├── link-item.tsx
+│   │   │   │   ├── nav-accordion.tsx
+│   │   │   │   ├── render-child.tsx
+│   │   │   │   ├── styles.ts
+│   │   │   │   └── use-scroll.ts
+│   │   │   ├── health-beauty-side-nav
+│   │   │   │   ├── health-beauty-side-nav.tsx
+│   │   │   │   ├── nav-accordion.tsx
+│   │   │   │   ├── render-child.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── index.ts
+│   │   │   └── side-navbar
+│   │   │       ├── category-title.tsx
+│   │   │       ├── nav-accordion.tsx
+│   │   │       ├── render-child.tsx
+│   │   │       ├── side-nav-bar.tsx
+│   │   │       └── styles.ts
+│   │   ├── product-cards
+│   │   │   ├── discount-chip.tsx
+│   │   │   ├── product-card-1
+│   │   │   │   ├── hover-actions.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   ├── quantity-buttons.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-2
+│   │   │   │   ├── favorite-button.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── product-price.tsx
+│   │   │   ├── product-card-3
+│   │   │   │   ├── hover-actions.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-4
+│   │   │   │   ├── hover-actions.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-5
+│   │   │   │   ├── button-actions.tsx
+│   │   │   │   ├── hover-actions.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-6
+│   │   │   │   ├── hover-actions.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-7
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   ├── product-status.tsx
+│   │   │   │   ├── quantity-buttons.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-8
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-card-9
+│   │   │   │   ├── add-to-cart.tsx
+│   │   │   │   ├── favorite-button.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   └── product-card.tsx
+│   │   │   ├── product-card-10
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-card.tsx
+│   │   │   │   └── styles.ts
+│   │   │   ├── product-price.tsx
+│   │   │   ├── product-rating.tsx
+│   │   │   ├── product-title.tsx
+│   │   │   └── use-product.ts
+│   │   ├── products-view
+│   │   │   ├── product-view-dialog.tsx
+│   │   │   ├── products-grid-view.tsx
+│   │   │   └── products-list-view.tsx
+│   │   ├── progress
+│   │   │   ├── index.ts
+│   │   │   └── progress.tsx
+│   │   ├── rtl
+│   │   │   ├── index.ts
+│   │   │   └── RTL.tsx
+│   │   ├── Scrollbar.tsx
+│   │   ├── search-box
+│   │   │   ├── categories.ts
+│   │   │   ├── category-dropdown.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── search-input-category.tsx
+│   │   │   ├── search-input.tsx
+│   │   │   ├── search-result.tsx
+│   │   │   ├── styled.ts
+│   │   │   └── use-search.ts
+│   │   ├── SearchInput.tsx
+│   │   ├── section-header
+│   │   │   ├── index.ts
+│   │   │   ├── section-creator.tsx
+│   │   │   └── section-header.tsx
+│   │   ├── settings
+│   │   │   ├── index.ts
+│   │   │   ├── setting.tsx
+│   │   │   └── styles.ts
+│   │   ├── side-nav
+│   │   │   ├── index.ts
+│   │   │   ├── side-nav-container.tsx
+│   │   │   ├── side-nav.tsx
+│   │   │   └── styles.ts
+│   │   ├── SnackbarProvider.tsx
+│   │   ├── sticky
+│   │   │   ├── index.ts
+│   │   │   ├── Sticky.tsx
+│   │   │   └── styles.ts
+│   │   ├── topbar
+│   │   │   ├── index.ts
+│   │   │   ├── styles.ts
+│   │   │   └── top-bar.tsx
+│   │   ├── Typography.tsx
+│   │   └── WhiteButton.tsx
+│   ├── contexts
+│   │   ├── CartContext.tsx
+│   │   └── SettingContext.tsx
+│   ├── data
+│   │   ├── bazaar-react-database.ts
+│   │   ├── categoriesMegaMenu.ts
+│   │   ├── countryList.ts
+│   │   ├── groceryNavigations.ts
+│   │   ├── months-years.ts
+│   │   ├── navbarNavigation.ts
+│   │   ├── navigations.ts
+│   │   ├── product-database.ts
+│   │   └── product-variants.ts
+│   ├── hooks
+│   │   ├── useCart.ts
+│   │   ├── useMuiTable.ts
+│   │   ├── useScroller.ts
+│   │   ├── useSettings.ts
+│   │   └── useWindowSize.ts
+│   ├── i18n
+│   │   ├── index.ts
+│   │   └── resource.ts
+│   ├── icons
+│   │   ├── AlarmClock.tsx
+│   │   ├── Apple.tsx
+│   │   ├── AppleStore.tsx
+│   │   ├── BabyBoy.tsx
+│   │   ├── BabyFeeder.tsx
+│   │   ├── BabyGirl.tsx
+│   │   ├── BasketBall.tsx
+│   │   ├── BeautyProducts.tsx
+│   │   ├── Beer.tsx
+│   │   ├── Bottle.tsx
+│   │   ├── Breakfast.tsx
+│   │   ├── Camera.tsx
+│   │   ├── Car.tsx
+│   │   ├── Carrot.tsx
+│   │   ├── Cart.tsx
+│   │   ├── CartBag.tsx
+│   │   ├── CartCheck.tsx
+│   │   ├── CartX.tsx
+│   │   ├── Category.tsx
+│   │   ├── CategoryOutline.tsx
+│   │   ├── CreditCardVerified.tsx
+│   │   ├── CustomerService.tsx
+│   │   ├── Delivery.tsx
+│   │   ├── DeliveryBox.tsx
+│   │   ├── DottedStar.tsx
+│   │   ├── Dress.tsx
+│   │   ├── DrillMachine.tsx
+│   │   ├── duotone
+│   │   │   ├── Accounts.tsx
+│   │   │   ├── AccountSetting.tsx
+│   │   │   ├── AdminEcommerce.tsx
+│   │   │   ├── Apps.tsx
+│   │   │   ├── Calender.tsx
+│   │   │   ├── Chat.tsx
+│   │   │   ├── Customers.tsx
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── DataTable.tsx
+│   │   │   ├── Ecommerce.tsx
+│   │   │   ├── ElementHub.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── Invoice.tsx
+│   │   │   ├── Logout.tsx
+│   │   │   ├── Order.tsx
+│   │   │   ├── Pages.tsx
+│   │   │   ├── Pricing.tsx
+│   │   │   ├── Products.tsx
+│   │   │   ├── ProjectChart.tsx
+│   │   │   ├── Refund.tsx
+│   │   │   ├── Review.tsx
+│   │   │   ├── Seller.tsx
+│   │   │   ├── Session.tsx
+│   │   │   ├── Settings.tsx
+│   │   │   ├── Shirt.tsx
+│   │   │   ├── Shoe.tsx
+│   │   │   ├── SiteSetting.tsx
+│   │   │   ├── TodoList.tsx
+│   │   │   ├── UserProfile.tsx
+│   │   │   ├── UserTie.tsx
+│   │   │   └── Vest.tsx
+│   │   ├── Eye.tsx
+│   │   ├── Facebook.tsx
+│   │   ├── FacebookFilled.tsx
+│   │   ├── FeedbackThumbsUp.tsx
+│   │   ├── Figma.tsx
+│   │   ├── Food.tsx
+│   │   ├── FormalCloth.tsx
+│   │   ├── furniture-shop
+│   │   │   ├── Chair.tsx
+│   │   │   ├── Decoration.tsx
+│   │   │   ├── Dining.tsx
+│   │   │   ├── Furniture.tsx
+│   │   │   ├── Home.tsx
+│   │   │   ├── Interior.tsx
+│   │   │   ├── Living.tsx
+│   │   │   ├── Popular.tsx
+│   │   │   ├── Products.tsx
+│   │   │   ├── RoomSet.tsx
+│   │   │   ├── RoundTable.tsx
+│   │   │   ├── Sofa.tsx
+│   │   │   ├── Stool.tsx
+│   │   │   ├── Trending.tsx
+│   │   │   └── Wardrobe.tsx
+│   │   ├── gift-shop
+│   │   │   ├── BabyToys.tsx
+│   │   │   ├── BirthdayCake.tsx
+│   │   │   ├── Children.tsx
+│   │   │   ├── Christmas.tsx
+│   │   │   ├── Flower.tsx
+│   │   │   ├── Football.tsx
+│   │   │   ├── NewYearGift.tsx
+│   │   │   ├── Robot.tsx
+│   │   │   ├── TeddyBear.tsx
+│   │   │   ├── Toys.tsx
+│   │   │   ├── ValentineGift.tsx
+│   │   │   └── WeddingGift.tsx
+│   │   ├── Gift.tsx
+│   │   ├── GiftBox.tsx
+│   │   ├── Globe.tsx
+│   │   ├── GoldPackageIcon.tsx
+│   │   ├── Google.tsx
+│   │   ├── health-and-beauty
+│   │   │   ├── Automotive.tsx
+│   │   │   ├── FaceMask.tsx
+│   │   │   ├── HealthBeauty.tsx
+│   │   │   ├── LenseCase.tsx
+│   │   │   ├── Lipstick.tsx
+│   │   │   ├── Lotion.tsx
+│   │   │   ├── Mascara.tsx
+│   │   │   ├── OxygenPump.tsx
+│   │   │   ├── Powder.tsx
+│   │   │   └── Thermometer.tsx
+│   │   ├── Heart.tsx
+│   │   ├── Home.tsx
+│   │   ├── Honey.tsx
+│   │   ├── index.ts
+│   │   ├── Instagram.tsx
+│   │   ├── InstagramFilled.tsx
+│   │   ├── Laptop.tsx
+│   │   ├── Light.tsx
+│   │   ├── Lightning.tsx
+│   │   ├── MakeUp.tsx
+│   │   ├── Man.tsx
+│   │   ├── Microphone.tsx
+│   │   ├── Milk.tsx
+│   │   ├── MoneyGurantee.tsx
+│   │   ├── MotorBike.tsx
+│   │   ├── NewArrival.tsx
+│   │   ├── OnlineService.tsx
+│   │   ├── OnlineSupport.tsx
+│   │   ├── PackageBox.tsx
+│   │   ├── Pages.tsx
+│   │   ├── Pant.tsx
+│   │   ├── Payment.tsx
+│   │   ├── Pen.tsx
+│   │   ├── Pets.tsx
+│   │   ├── PickUpBox.tsx
+│   │   ├── Picture.tsx
+│   │   ├── PlantPot.tsx
+│   │   ├── PlayStore.tsx
+│   │   ├── PremiumPackageIcon.tsx
+│   │   ├── Preview.tsx
+│   │   ├── Quote.tsx
+│   │   ├── RankBadge.tsx
+│   │   ├── Reload.tsx
+│   │   ├── Search.tsx
+│   │   ├── Shield.tsx
+│   │   ├── Shirt.tsx
+│   │   ├── ShoppingBagOutlined.tsx
+│   │   ├── SilverPackageIcon.tsx
+│   │   ├── Skirt.tsx
+│   │   ├── Snack.tsx
+│   │   ├── Sofa.tsx
+│   │   ├── TeddyBear.tsx
+│   │   ├── Telegram.tsx
+│   │   ├── Toggle.tsx
+│   │   ├── Tops.tsx
+│   │   ├── Truck.tsx
+│   │   ├── TruckFast.tsx
+│   │   ├── TruckFilled.tsx
+│   │   ├── Tshirt.tsx
+│   │   ├── Twitter.tsx
+│   │   ├── TwitterFilled.tsx
+│   │   ├── UpDown.tsx
+│   │   ├── User.tsx
+│   │   ├── User2.tsx
+│   │   ├── Verify.tsx
+│   │   ├── Vest.tsx
+│   │   ├── Watch.tsx
+│   │   ├── Wheel.tsx
+│   │   ├── Woman.tsx
+│   │   ├── WomenDress.tsx
+│   │   ├── Yogurt.tsx
+│   │   ├── Youtube.tsx
+│   │   └── YoutubeFilled.tsx
+│   ├── lib
+│   │   └── index.ts
+│   ├── models
+│   │   ├── Address.model.ts
+│   │   ├── Blog.model.ts
+│   │   ├── Brand.model.ts
+│   │   ├── Carousel.model.ts
+│   │   ├── Category.model.ts
+│   │   ├── CategoryNavList.model.ts
+│   │   ├── Gadget.model.ts
+│   │   ├── Grocery-3.model.ts
+│   │   ├── Market-1.model.ts
+│   │   ├── Market-2.model.ts
+│   │   ├── Order.model.ts
+│   │   ├── Product.model.ts
+│   │   ├── Review.model.ts
+│   │   ├── Service.model.ts
+│   │   ├── Shop.model.ts
+│   │   ├── Ticket.model.ts
+│   │   └── User.model.ts
+│   ├── pages-sections
+│   │   ├── cart
+│   │   │   ├── cart-item.tsx
+│   │   │   ├── checkout-form.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── cart.tsx
+│   │   │   │   └── index.ts
+│   │   │   └── styles.ts
+│   │   ├── checkout
+│   │   │   ├── checkout-alt-form
+│   │   │   │   ├── _types.ts
+│   │   │   │   ├── checkout-form.tsx
+│   │   │   │   ├── delivery-address.tsx
+│   │   │   │   ├── delivery-date.tsx
+│   │   │   │   ├── edit-address-form.tsx
+│   │   │   │   ├── heading.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── new-address-form.tsx
+│   │   │   │   └── payment-details.tsx
+│   │   │   ├── checkout-alt-summery
+│   │   │   │   ├── cart-item.tsx
+│   │   │   │   ├── checkout-alt-summery.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── checkout-form
+│   │   │   │   ├── billing-address-form.tsx
+│   │   │   │   ├── checkout-form.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   └── shipping-form.tsx
+│   │   │   ├── checkout-summery
+│   │   │   │   ├── checkout-summery.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── list-item.tsx
+│   │   │   └── page-view
+│   │   │       ├── checkout-alternative.tsx
+│   │   │       ├── checkout.tsx
+│   │   │       └── index.ts
+│   │   ├── customer-dashboard
+│   │   │   ├── address
+│   │   │   │   ├── address-form.tsx
+│   │   │   │   ├── address-item.tsx
+│   │   │   │   └── page-view
+│   │   │   │       ├── address-details.tsx
+│   │   │   │       ├── address.tsx
+│   │   │   │       └── index.ts
+│   │   │   ├── dashboard-header.tsx
+│   │   │   ├── orders
+│   │   │   │   ├── order-progress.tsx
+│   │   │   │   ├── order-row.tsx
+│   │   │   │   ├── order-summery.tsx
+│   │   │   │   ├── ordered-products.tsx
+│   │   │   │   └── page-view
+│   │   │   │       ├── index.ts
+│   │   │   │       ├── order-details.tsx
+│   │   │   │       └── orders.tsx
+│   │   │   ├── pagination.tsx
+│   │   │   ├── payment-methods
+│   │   │   │   ├── list-card.tsx
+│   │   │   │   ├── page-view
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── payment-details.tsx
+│   │   │   │   │   └── payment-methods.tsx
+│   │   │   │   └── payment-form.tsx
+│   │   │   ├── profile
+│   │   │   │   ├── edit-form.tsx
+│   │   │   │   ├── page-view
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── profile-edit.tsx
+│   │   │   │   │   └── profile.tsx
+│   │   │   │   ├── profile-pic-upload.tsx
+│   │   │   │   ├── user-analytics.tsx
+│   │   │   │   └── user-info.tsx
+│   │   │   ├── support-tickets
+│   │   │   │   ├── conversation-card.tsx
+│   │   │   │   ├── message-form.tsx
+│   │   │   │   ├── page-view
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── support-tickets.tsx
+│   │   │   │   │   └── ticket-details.tsx
+│   │   │   │   └── ticket-card.tsx
+│   │   │   ├── table-row.tsx
+│   │   │   └── wish-list
+│   │   │       ├── index.ts
+│   │   │       ├── use-wish-list.ts
+│   │   │       └── wish-list.tsx
+│   │   ├── fashion-1
+│   │   │   ├── page-view
+│   │   │   │   ├── fashion-1.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   ├── section-7.tsx
+│   │   │   ├── section-8.tsx
+│   │   │   ├── shared
+│   │   │   │   ├── card-1.tsx
+│   │   │   │   ├── card-2.tsx
+│   │   │   │   ├── card-3.tsx
+│   │   │   │   ├── card-4.tsx
+│   │   │   │   ├── card-5.tsx
+│   │   │   │   ├── deal-week-card.tsx
+│   │   │   │   └── long-product-card.tsx
+│   │   │   └── style.ts
+│   │   ├── fashion-2
+│   │   │   ├── banner-card.tsx
+│   │   │   ├── blog-card.tsx
+│   │   │   ├── list-block.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── fashion-2.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   ├── section-7.tsx
+│   │   │   ├── section-8.tsx
+│   │   │   ├── section-9.tsx
+│   │   │   └── section-10.tsx
+│   │   ├── fashion-3
+│   │   │   ├── page-view
+│   │   │   │   ├── fashion-3.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   ├── section-7.tsx
+│   │   │   └── section-8.tsx
+│   │   ├── furniture-shop
+│   │   │   ├── page-view
+│   │   │   │   ├── furniture-shop.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── sidebar.tsx
+│   │   │   └── styles.ts
+│   │   ├── gadget-shop
+│   │   │   ├── blog-card.tsx
+│   │   │   ├── common
+│   │   │   │   ├── card-1.tsx
+│   │   │   │   ├── card-2.tsx
+│   │   │   │   ├── card-3.tsx
+│   │   │   │   └── product-carousel.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── gadget-shop.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   └── section-7.tsx
+│   │   ├── gift-shop
+│   │   │   ├── category-card.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── gift-shop.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   ├── section-7.tsx
+│   │   │   ├── sidebar.tsx
+│   │   │   └── styles.ts
+│   │   ├── grocery-1
+│   │   │   ├── all-products.tsx
+│   │   │   ├── discount.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── grocery-1.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── product-carousel.tsx
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   └── styles.ts
+│   │   ├── grocery-2
+│   │   │   ├── page-view
+│   │   │   │   ├── grocery-2.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── product-carousel.tsx
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   └── section-5.tsx
+│   │   ├── grocery-3
+│   │   │   ├── page-view
+│   │   │   │   ├── grocery-3.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   └── styles.ts
+│   │   ├── health-beauty-shop
+│   │   │   ├── page-view
+│   │   │   │   ├── health-beauty.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   └── styles.ts
+│   │   ├── landing
+│   │   │   ├── footer.tsx
+│   │   │   ├── header.tsx
+│   │   │   ├── page-card.tsx
+│   │   │   ├── page-view
+│   │   │   │   └── index.tsx
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   └── section-6.tsx
+│   │   ├── market-1
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   └── market-1.tsx
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   ├── section-7.tsx
+│   │   │   ├── section-8.tsx
+│   │   │   ├── section-9.tsx
+│   │   │   ├── section-10.tsx
+│   │   │   ├── section-11.tsx
+│   │   │   ├── section-12.tsx
+│   │   │   └── shared
+│   │   │       ├── featured-product-card.tsx
+│   │   │       ├── product-category-item.tsx
+│   │   │       ├── top-categories-card.tsx
+│   │   │       └── top-rating-product-card.tsx
+│   │   ├── market-2
+│   │   │   ├── banner-card.tsx
+│   │   │   ├── offers.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   └── market-2.tsx
+│   │   │   ├── section-1.tsx
+│   │   │   ├── section-2.tsx
+│   │   │   ├── section-3.tsx
+│   │   │   ├── section-4.tsx
+│   │   │   ├── section-5.tsx
+│   │   │   ├── section-6.tsx
+│   │   │   ├── section-7.tsx
+│   │   │   ├── section-8.tsx
+│   │   │   └── section-9.tsx
+│   │   ├── not-found
+│   │   │   ├── index.ts
+│   │   │   └── not-found.tsx
+│   │   ├── order-confirmation
+│   │   │   ├── index.ts
+│   │   │   └── page-view.tsx
+│   │   ├── payment
+│   │   │   ├── credit-card-form.tsx
+│   │   │   ├── form-label.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   └── payment.tsx
+│   │   │   ├── payment-form.tsx
+│   │   │   ├── payment-item.tsx
+│   │   │   └── payment-summery.tsx
+│   │   ├── product-details
+│   │   │   ├── available-shops.tsx
+│   │   │   ├── frequently-bought.tsx
+│   │   │   ├── frequently-product-card.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── product-details.tsx
+│   │   │   │   └── product-search.tsx
+│   │   │   ├── product-comment.tsx
+│   │   │   ├── product-description.tsx
+│   │   │   ├── product-filter-card.tsx
+│   │   │   ├── product-intro.tsx
+│   │   │   ├── product-review.tsx
+│   │   │   ├── product-tabs.tsx
+│   │   │   └── related-products.tsx
+│   │   ├── sales
+│   │   │   ├── category-list.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── sales-1.tsx
+│   │   │   │   └── sales-2.tsx
+│   │   │   ├── product-list.tsx
+│   │   │   ├── product-pagination.tsx
+│   │   │   ├── sales-navbar.tsx
+│   │   │   ├── styles.ts
+│   │   │   └── use-sales.ts
+│   │   ├── sessions
+│   │   │   ├── box-link.tsx
+│   │   │   ├── eye-toggle-button.tsx
+│   │   │   ├── layout.tsx
+│   │   │   ├── login-bottom.tsx
+│   │   │   ├── logo-title.tsx
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── login.tsx
+│   │   │   │   ├── register.tsx
+│   │   │   │   └── reset-password.tsx
+│   │   │   ├── social-buttons.tsx
+│   │   │   ├── styles.ts
+│   │   │   └── use-password-visible.ts
+│   │   ├── shops
+│   │   │   ├── page-view
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── shop-details.tsx
+│   │   │   │   └── shops.tsx
+│   │   │   ├── shop-card.tsx
+│   │   │   └── shop-intro-card.tsx
+│   │   └── vendor-dashboard
+│   │       ├── account-settings
+│   │       │   ├── cover-pic-section.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── account-settings.tsx
+│   │       │   │   └── index.ts
+│   │       │   └── upload-button.tsx
+│   │       ├── brands
+│   │       │   ├── brand-form.tsx
+│   │       │   ├── brand-row.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── brand-create.tsx
+│   │       │   │   ├── brand-edit.tsx
+│   │       │   │   ├── brands.tsx
+│   │       │   │   └── index.ts
+│   │       │   └── table-heading.ts
+│   │       ├── categories
+│   │       │   ├── category-form.tsx
+│   │       │   ├── category-row.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── categories.tsx
+│   │       │   │   ├── category-edit.tsx
+│   │       │   │   ├── create-category.tsx
+│   │       │   │   └── index.ts
+│   │       │   └── table-heading.ts
+│   │       ├── customers
+│   │       │   ├── customer-row.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── customers.tsx
+│   │       │   │   └── index.ts
+│   │       │   └── table-heading.ts
+│   │       ├── dashboard
+│   │       │   ├── analytics.tsx
+│   │       │   ├── apex-chart.tsx
+│   │       │   ├── card-1.tsx
+│   │       │   ├── card-2.tsx
+│   │       │   ├── chart-options.ts
+│   │       │   ├── page-view
+│   │       │   │   ├── dashboard.tsx
+│   │       │   │   └── index.ts
+│   │       │   ├── recent-purchase.tsx
+│   │       │   ├── sales.tsx
+│   │       │   ├── stock-out-products.tsx
+│   │       │   ├── table
+│   │       │   │   ├── index.tsx
+│   │       │   │   └── table-head.tsx
+│   │       │   ├── types.ts
+│   │       │   └── welcome-card.tsx
+│   │       ├── earning-history
+│   │       │   ├── history-row.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── earning-history.tsx
+│   │       │   │   └── index.ts
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── orders
+│   │       │   ├── order-actions.tsx
+│   │       │   ├── order-row.tsx
+│   │       │   ├── ordered-product.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   ├── order-details.tsx
+│   │       │   │   └── orders.tsx
+│   │       │   ├── shipping-address.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── total-summery.tsx
+│   │       ├── package-payments
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── package-payment.tsx
+│   │       │   ├── payment-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── payout-requests
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── payout-requests.tsx
+│   │       │   ├── request-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── payout-settings
+│   │       │   ├── bank-payment.tsx
+│   │       │   ├── card-payment.tsx
+│   │       │   ├── cash-payment.tsx
+│   │       │   └── page-view
+│   │       │       ├── index.ts
+│   │       │       └── payout-settings.tsx
+│   │       ├── payouts
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── payouts.tsx
+│   │       │   ├── payout-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── products
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   ├── product-create.tsx
+│   │       │   │   ├── product-edit.tsx
+│   │       │   │   ├── product-reviews.tsx
+│   │       │   │   └── products.tsx
+│   │       │   ├── product-form.tsx
+│   │       │   ├── product-row.tsx
+│   │       │   └── review-row.tsx
+│   │       ├── refund-request
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── refund-request.tsx
+│   │       │   ├── refund-request-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── refund-setting
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── refund-setting.tsx
+│   │       │   └── reason-type.tsx
+│   │       ├── reviews
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── reviews.tsx
+│   │       │   ├── review-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── search-box.tsx
+│   │       ├── seller-package
+│   │       │   ├── package-card.tsx
+│   │       │   ├── packages.ts
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── seller-package.tsx
+│   │       │   └── types.ts
+│   │       ├── sellers
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── sellers.tsx
+│   │       │   ├── seller-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       ├── shop-settings
+│   │       │   ├── page-settings.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── shop-settings.tsx
+│   │       │   └── settings-form.tsx
+│   │       ├── site-settings
+│   │       │   ├── banner-slider.tsx
+│   │       │   ├── footer-form.tsx
+│   │       │   ├── general-form.tsx
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── site-settings.tsx
+│   │       │   ├── shipping-vat-form.tsx
+│   │       │   ├── social-links-form.tsx
+│   │       │   └── topbar-form.tsx
+│   │       ├── styles.ts
+│   │       ├── support-tickets
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── support-tickets.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── ticket-row.tsx
+│   │       ├── v-earning-history
+│   │       │   ├── page-view
+│   │       │   │   ├── earning-history.tsx
+│   │       │   │   └── index.ts
+│   │       │   ├── table-heading.ts
+│   │       │   ├── type.ts
+│   │       │   └── v-earning-row.tsx
+│   │       ├── v-payout-request
+│   │       │   ├── page-view
+│   │       │   │   ├── index.ts
+│   │       │   │   └── payout-request.tsx
+│   │       │   ├── request-row.tsx
+│   │       │   ├── table-heading.ts
+│   │       │   └── types.ts
+│   │       └── v-payouts
+│   │           ├── page-view
+│   │           │   ├── index.ts
+│   │           │   └── payouts.tsx
+│   │           ├── payout-row.tsx
+│   │           ├── table-heading.ts
+│   │           └── types.ts
+│   ├── theme
+│   │   ├── components.ts
+│   │   ├── emotion-cache.tsx
+│   │   ├── theme-colors.ts
+│   │   ├── theme-options-sample.ts
+│   │   ├── theme-options.ts
+│   │   ├── theme-provider.tsx
+│   │   └── typography.ts
+│   └── utils
+│       ├── __api__
+│       │   ├── address.ts
+│       │   ├── dashboard.ts
+│       │   ├── fashion-1.ts
+│       │   ├── fashion-2.ts
+│       │   ├── fashion-3.ts
+│       │   ├── furniture-shop.ts
+│       │   ├── gadget-shop.ts
+│       │   ├── gift-shop.ts
+│       │   ├── grocery-1.ts
+│       │   ├── grocery-2.ts
+│       │   ├── grocery-3.ts
+│       │   ├── healthbeauty-shop.ts
+│       │   ├── market-1.ts
+│       │   ├── market-2.ts
+│       │   ├── orders.ts
+│       │   ├── products.ts
+│       │   ├── related-products.ts
+│       │   ├── sales.ts
+│       │   ├── shop.ts
+│       │   ├── ticket.ts
+│       │   ├── users.ts
+│       │   ├── vendor.ts
+│       │   └── wish-list.ts
+│       └── constants.ts
+├── structure.txt
+└── tsconfig.json
